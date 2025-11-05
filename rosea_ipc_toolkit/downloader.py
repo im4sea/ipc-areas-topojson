@@ -42,8 +42,8 @@ from .topology import convert_geojson_to_topology, load_topojson_features, save_
 @dataclass(frozen=True)
 class DownloadConfig:
     years_to_try: Optional[List[int]] = None
-    precision: int = 2  # More aggressive: 2 decimal places instead of 4
-    simplify_tolerance: float = 0.001  # More aggressive: apply simplification by default
+    precision: int = 4
+    simplify_tolerance: float = 0.0
     ocha_region: Optional[str] = "ROSEA"
     request_timeout: int = 30
     retry_delay: float = 0.5

@@ -21,6 +21,14 @@ on:
         description: 'Set to true to skip index.json generation.'
         required: false
         default: 'false'
+      precision:
+        description: 'Decimal precision applied during simplification (default: 4).'
+        required: false
+        default: '4'
+      simplify_tolerance:
+        description: 'Simplification tolerance in coordinate units (set to 0 to disable).'
+        required: false
+        default: '0.0'
 
 jobs:
   refresh:
@@ -47,7 +55,20 @@ jobs:
         id: args
         shell: bash
         run: |
-          ARGS=""
+          DEFAULT_PRECISION="4"
+          DEFAULT_TOLERANCE="0.0"
+
+          PRECISION_INPUT="${{ github.event.inputs.precision }}"
+          if [ -z "${PRECISION_INPUT}" ]; then
+            PRECISION_INPUT="${DEFAULT_PRECISION}"
+          fi
+
+          TOLERANCE_INPUT="${{ github.event.inputs.simplify_tolerance }}"
+          if [ -z "${TOLERANCE_INPUT}" ]; then
+            TOLERANCE_INPUT="${DEFAULT_TOLERANCE}"
+          fi
+
+          ARGS="--precision ${PRECISION_INPUT} --simplify-tolerance ${TOLERANCE_INPUT}"
           
           # Handle year selection
           if [ -n "${{ github.event.inputs.specific_years }}" ]; then
@@ -75,6 +96,8 @@ jobs:
           if [ "${{ github.event.inputs.skip_index }}" = "true" ]; then
             ARGS="${ARGS} --skip-index"
           fi
+
+          ARGS=$(echo "${ARGS}" | xargs)
           
           echo "args=${ARGS}" >> "$GITHUB_OUTPUT"
 
