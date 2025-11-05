@@ -40,10 +40,12 @@ def feature_key(feature: Feature) -> str:
 
 
 def normalise_polygon_geometry(geometry: Any) -> Optional[Dict[str, Any]]:
-    """Return a polygonal geometry (Polygon/MultiPolygon) or ``None``.
+    """Return a geometry that only contains polygonal members or ``None``.
 
-    Geometry collections are flattened so that any polygonal members are
-    retained, while non-polygonal members (e.g. points, lines) are ignored.
+    ``Polygon`` and ``MultiPolygon`` geometries are copied verbatim. For
+    ``GeometryCollection`` inputs we recursively strip out non-polygonal
+    members (e.g. points, lines), retaining the collection structure so the
+    source geometry is represented faithfully. Empty results return ``None``.
     """
 
     if not isinstance(geometry, dict):
@@ -64,27 +66,17 @@ def normalise_polygon_geometry(geometry: Any) -> Optional[Dict[str, Any]]:
         return {"type": "MultiPolygon", "coordinates": copy.deepcopy(coordinates)}
 
     if geom_type == "GeometryCollection":
-        polygons: List[Any] = []
-        multi_detected = False
+        geometries: List[Any] = []
 
         for child in geometry.get("geometries") or []:
             normalised = normalise_polygon_geometry(child)
-            if not normalised:
-                continue
+            if normalised:
+                geometries.append(normalised)
 
-            if normalised["type"] == "Polygon":
-                polygons.append(copy.deepcopy(normalised["coordinates"]))
-            elif normalised["type"] == "MultiPolygon":
-                multi_detected = True
-                polygons.extend(copy.deepcopy(normalised["coordinates"]))
-
-        if not polygons:
+        if not geometries:
             return None
 
-        if multi_detected or len(polygons) > 1:
-            return {"type": "MultiPolygon", "coordinates": polygons}
-
-        return {"type": "Polygon", "coordinates": polygons[0]}
+        return {"type": "GeometryCollection", "geometries": geometries}
 
     return None
 

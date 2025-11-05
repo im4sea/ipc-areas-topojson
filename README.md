@@ -5,7 +5,7 @@ Automation for downloading and harmonising IPC (Integrated Food Security Phase C
 ## Outputs
 
 - `data/{ISO3}/{ISO3}_combined_areas.topojson` – all assessments for a country, deduplicated by IPC ID with rounded coordinates.
-- `data/global_areas.topojson` – aggregation of every combined country file with aggressive rounding and simplification.
+- `data/global_areas.topojson` – aggregation of every combined country file with configurable rounding and simplification (defaults to conservative values).
 - `data/index.json` – catalogue of exported datasets, feature counts, timestamps, and optional CDN URLs.
 - `data/**/*_unsimplified.json` – optional reports listing features kept at full detail when simplification fails or has no effect.
 
@@ -39,7 +39,7 @@ Automation for downloading and harmonising IPC (Integrated Food Security Phase C
 
 - Core logic lives under `rosea_ipc_toolkit/`; CLI wrappers sit in `cli/`.
 - `DownloadConfig` controls years, precision, simplification, rate limiting, and country filters.
-- Geometry collections are flattened so polygon and multipolygon content is retained while points are ignored.
+- Geometry collections keep their original structure while non-polygon members are stripped so polygonal detail matches the source data.
 - Update `DEFAULT_YEARS` in `rosea_ipc_toolkit.config` when IPC adds assessments.
 - CDN URLs default to the next semantic git tag; set `CDN_RELEASE_TAG` to override.
 
