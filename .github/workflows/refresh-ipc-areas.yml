@@ -1,0 +1,96 @@
+name: Refresh IPC Areas Data
+
+on:
+  schedule:
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
+    inputs:
+      full_refresh:
+        description: 'Set to true to include historical assessment years (default uses current year only).'
+        required: false
+        default: 'false'
+      specific_years:
+        description: 'Specific years to process (comma-separated, e.g., "2024,2023"). Overrides full_refresh setting.'
+        required: false
+        default: ''
+      country_codes:
+        description: 'Specific country ISO2/ISO3 codes to process (comma-separated, e.g., "UG,SO,KE"). Leave empty for all countries.'
+        required: false
+        default: ''
+      skip_index:
+        description: 'Set to true to skip index.json generation.'
+        required: false
+        default: 'false'
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build CLI arguments
+        id: args
+        shell: bash
+        run: |
+          ARGS=""
+          
+          # Handle year selection
+          if [ -n "${{ github.event.inputs.specific_years }}" ]; then
+            # Convert comma-separated years to space-separated
+            YEARS=$(echo "${{ github.event.inputs.specific_years }}" | tr ',' ' ')
+            ARGS="--years ${YEARS}"
+          elif [ "${{ github.event_name }}" = "schedule" ]; then
+            YEAR=$(date +'%Y')
+            ARGS="--years ${YEAR}"
+          elif [ "${{ github.event.inputs.full_refresh }}" = "true" ]; then
+            # No years argument means all historical years
+            ARGS=""
+          else
+            YEAR=$(date +'%Y')
+            ARGS="--years ${YEAR}"
+          fi
+          
+          # Handle country selection
+          if [ -n "${{ github.event.inputs.country_codes }}" ]; then
+            # Convert comma-separated countries to space-separated
+            COUNTRIES=$(echo "${{ github.event.inputs.country_codes }}" | tr ',' ' ')
+            ARGS="${ARGS} --countries ${COUNTRIES}"
+          fi
+
+          if [ "${{ github.event.inputs.skip_index }}" = "true" ]; then
+            ARGS="${ARGS} --skip-index"
+          fi
+          
+          echo "args=${ARGS}" >> "$GITHUB_OUTPUT"
+
+      - name: Download country datasets
+        env:
+          IPC_KEY: ${{ secrets.IPC_KEY }}
+        run: python cli/download_ipc_areas.py ${{ steps.args.outputs.args }}
+
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: 'chore: refresh IPC areas data'
+          branch: 'bot/refresh-ipc-areas'
+          delete-branch: true
+          title: 'Automated IPC areas data refresh'
+          body: |
+            Automated data refresh triggered by `${{ github.event_name }}`.
+            - CLI arguments: `${{ steps.args.outputs.args }}`
+            - Downloader stores combined country files and a refreshed `data/global_areas.topojson`.

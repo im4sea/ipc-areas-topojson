@@ -1,0 +1,52 @@
+{
+  "generated_at": "2025-11-05T05:05:09Z",
+  "cdn_release_tag": "v1.3",
+  "total_files": 4,
+  "items": [
+    {
+      "country": "Global",
+      "relative_path": "data/global_areas.topojson",
+      "file_name": "global_areas.topojson",
+      "feature_count": 1279,
+      "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.3/data/global_areas.topojson",
+      "updated_at": "2025-11-05T05:05:09Z",
+      "variant": "global"
+    },
+    {
+      "country": "Sudan (the)",
+      "iso2": "SD",
+      "iso3": "SDN",
+      "year": 2024,
+      "relative_path": "data/SDN/SDN_combined_areas.topojson",
+      "file_name": "SDN_combined_areas.topojson",
+      "feature_count": 885,
+      "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.3/data/SDN/SDN_combined_areas.topojson",
+      "updated_at": "2025-11-05T05:04:55Z",
+      "variant": "combined"
+    },
+    {
+      "country": "South Sudan",
+      "iso2": "SS",
+      "iso3": "SSD",
+      "year": 2025,
+      "relative_path": "data/SSD/SSD_combined_areas.topojson",
+      "file_name": "SSD_combined_areas.topojson",
+      "feature_count": 394,
+      "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.3/data/SSD/SSD_combined_areas.topojson",
+      "updated_at": "2025-11-05T05:04:45Z",
+      "variant": "combined"
+    },
+    {
+      "country": "South Sudan",
+      "iso2": "SS",
+      "iso3": "SSD",
+      "year": 2025,
+      "relative_path": "data/SSD/SSD_2025_areas.topojson",
+      "file_name": "SSD_2025_areas.topojson",
+      "feature_count": 78,
+      "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.3/data/SSD/SSD_2025_areas.topojson",
+      "updated_at": "Nov 2025",
+      "variant": "year"
+    }
+  ]
+}
