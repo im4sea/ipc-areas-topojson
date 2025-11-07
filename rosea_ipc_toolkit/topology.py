@@ -15,7 +15,13 @@ Feature = Dict[str, Any]
 
 def convert_geojson_to_topology(geojson: Dict[str, Any]) -> Dict[str, Any]:
     topology = tp.Topology(geojson, prequantize=False)
-    return topology.to_dict()
+    result = topology.to_dict()
+    # Some point-only datasets omit the ``arcs`` array, but downstream tooling
+    # (and the topojson library itself when reloading the file) expects the key
+    # to exist. Normalise by inserting an empty list so later processes can
+    # safely apply rounding or other mutations without KeyError.
+    result.setdefault("arcs", [])
+    return result
 
 
 def _wrap_point_coordinates(geometry: Dict[str, Any]) -> None:
@@ -34,6 +40,8 @@ def _wrap_point_coordinates(geometry: Dict[str, Any]) -> None:
 
 def _wrap_topology_points(payload: Dict[str, Any]) -> Dict[str, Any]:
     wrapped = json.loads(json.dumps(payload))
+    if "arcs" not in wrapped:
+        wrapped["arcs"] = []
     objects = wrapped.get("objects")
     if not isinstance(objects, dict):
         return wrapped

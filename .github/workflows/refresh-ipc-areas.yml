@@ -109,6 +109,9 @@ jobs:
           IPC_KEY: ${{ secrets.IPC_KEY }}
         run: python cli/download_ipc_areas.py ${{ steps.args.outputs.args }}
 
+      - name: Discard workflow changes
+        run: git checkout -- .github/workflows
+
       - name: Create pull request
         uses: peter-evans/create-pull-request@v6
         with:
@@ -116,6 +119,8 @@ jobs:
           branch: 'bot/refresh-ipc-areas'
           delete-branch: true
           title: 'Automated IPC areas data refresh'
+          add-paths: |
+            data/**
           body: |
             Automated data refresh triggered by `${{ github.event_name }}`.
             - CLI arguments: `${{ steps.args.outputs.args }}`

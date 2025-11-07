@@ -33,7 +33,7 @@ from .dates import (
     DATE_UPDATED_KEYS,
     first_present,
 )
-from .feature_utils import feature_key, sanitise_geometry
+from .feature_utils import feature_key, sanitise_geometry, extract_polygonal_geometry
 from .git_utils import resolve_release_tag
 from .index import IndexBuilder
 from .merge import extract_years, flatten_features, merge_features
@@ -447,6 +447,10 @@ class IPCAreaDownloader:
             if not geometry:
                 continue
 
+            geometry = extract_polygonal_geometry(geometry)
+            if not geometry:
+                continue
+
             geometry_str = json.dumps(geometry, sort_keys=True)
             if geometry_str in seen_geometries:
                 continue
@@ -479,11 +483,13 @@ class IPCAreaDownloader:
             if to_value is not None:
                 attributes["to"] = to_value
 
-            cleaned_features.append({
-                "type": "Feature",
-                "geometry": geometry,
-                "properties": attributes,
-            })
+            cleaned_features.append(
+                {
+                    "type": "Feature",
+                    "geometry": geometry,
+                    "properties": attributes,
+                }
+            )
 
         analysis_meta["feature_count"] = len(cleaned_features)
         if not cleaned_features:

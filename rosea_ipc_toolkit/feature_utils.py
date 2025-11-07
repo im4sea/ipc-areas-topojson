@@ -90,3 +90,45 @@ def sanitise_geometry(geometry: Any) -> Optional[Geometry]:
         return json.loads(json.dumps(geometry))
     except (TypeError, ValueError):
         return None
+
+
+def extract_polygonal_geometry(geometry: Geometry | None) -> Optional[Geometry]:
+    """Return only the polygonal components of a geometry.
+
+    Geometry collections can include points or lines that the topojson library
+    cannot triangulate into ``arcs``. We retain Polygon and MultiPolygon
+    members, discarding everything else. If no polygonal content remains the
+    caller should skip the feature.
+    """
+
+    if not isinstance(geometry, dict):
+        return None
+
+    geom_type = geometry.get("type")
+    if geom_type in {"Polygon", "MultiPolygon"}:
+        return copy.deepcopy(geometry)
+
+    if geom_type == "GeometryCollection":
+        members = geometry.get("geometries")
+        if not isinstance(members, list):
+            return None
+
+        filtered: List[Geometry] = []
+        for member in members:
+            cleaned = extract_polygonal_geometry(member)
+            if cleaned is not None:
+                filtered.append(cleaned)
+
+        if not filtered:
+            return None
+
+        if len(filtered) == 1:
+            return filtered[0]
+
+        result: Geometry = {"type": "GeometryCollection", "geometries": filtered}
+        if "bbox" in geometry and isinstance(geometry["bbox"], list):
+            result["bbox"] = copy.deepcopy(geometry["bbox"])
+        return result
+
+    # Non-surface geometry types are ignored for topology conversion.
+    return None

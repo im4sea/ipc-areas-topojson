@@ -113,7 +113,9 @@ def build_topology(features: List[Dict[str, Any]]) -> Dict[str, Any]:
         "features": features,
     }
     topology = tp.Topology(feature_collection, prequantize=False)
-    return topology.to_dict()
+    result = topology.to_dict()
+    result.setdefault("arcs", [])
+    return result
 
 
 def write_output(target: Path, topology: Dict[str, Any]) -> None:
