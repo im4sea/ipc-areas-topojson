@@ -1,0 +1,62 @@
+{
+  "generated_at": "2025-11-07T14:01:35Z",
+  "source_file": "data/DJI/DJI_combined_areas.topojson",
+  "total_unsimplified": 5,
+  "items": [
+    {
+      "title": "Ali Sabieh Rural",
+      "id": "21818917",
+      "country": "DJI",
+      "year": 2020,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/DJI/DJI_combined_areas.topojson",
+      "from": "Oct 2020",
+      "to": "Dec 2020"
+    },
+    {
+      "title": "Ali Sabieh Rural",
+      "id": "24959523",
+      "country": "DJI",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/DJI/DJI_combined_areas.topojson",
+      "from": "Mar 2022",
+      "to": "Jun 2022"
+    },
+    {
+      "title": "Ali Sabieh Rural",
+      "id": "56992584",
+      "country": "DJI",
+      "year": 2023,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/DJI/DJI_combined_areas.topojson",
+      "from": "Mar 2023",
+      "to": "Jun 2023"
+    },
+    {
+      "title": "Ali Sabieh Rural",
+      "id": "68810220",
+      "country": "DJI",
+      "year": 2024,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/DJI/DJI_combined_areas.topojson",
+      "from": "Apr 2024",
+      "to": "Jun 2024"
+    },
+    {
+      "title": "Ali Sabieh Rural",
+      "id": "82016368",
+      "country": "DJI",
+      "year": 2025,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/DJI/DJI_combined_areas.topojson",
+      "from": "May 2025",
+      "to": "Jun 2025"
+    }
+  ]
+}
