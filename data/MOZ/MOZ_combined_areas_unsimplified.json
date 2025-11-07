@@ -1,0 +1,106 @@
+{
+  "generated_at": "2025-11-07T14:04:55Z",
+  "source_file": "data/MOZ/MOZ_combined_areas.topojson",
+  "total_unsimplified": 9,
+  "items": [
+    {
+      "title": "Namuno",
+      "id": "24498758",
+      "country": "MOZ",
+      "year": 2021,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/MOZ/MOZ_combined_areas.topojson",
+      "from": "Nov 2021",
+      "to": "Mar 2022"
+    },
+    {
+      "title": "Montepuez",
+      "id": "24498878",
+      "country": "MOZ",
+      "year": 2021,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/MOZ/MOZ_combined_areas.topojson",
+      "from": "Nov 2021",
+      "to": "Mar 2022"
+    },
+    {
+      "title": "Mueda",
+      "id": "24498880",
+      "country": "MOZ",
+      "year": 2021,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/MOZ/MOZ_combined_areas.topojson",
+      "from": "Nov 2021",
+      "to": "Mar 2022"
+    },
+    {
+      "title": "Distrito de Katembe",
+      "id": "48056974",
+      "country": "MOZ",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/MOZ/MOZ_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Mar 2023"
+    },
+    {
+      "title": "Limpopo",
+      "id": "48057031",
+      "country": "MOZ",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/MOZ/MOZ_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Mar 2023"
+    },
+    {
+      "title": "Montepuez",
+      "id": "64842088",
+      "country": "MOZ",
+      "year": 2023,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/MOZ/MOZ_combined_areas.topojson",
+      "from": "May 2023",
+      "to": "Sep 2023"
+    },
+    {
+      "title": "Namuno",
+      "id": "64842106",
+      "country": "MOZ",
+      "year": 2023,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/MOZ/MOZ_combined_areas.topojson",
+      "from": "May 2023",
+      "to": "Sep 2023"
+    },
+    {
+      "title": "KaNyaka",
+      "id": "64842120",
+      "country": "MOZ",
+      "year": 2023,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/MOZ/MOZ_combined_areas.topojson",
+      "from": "May 2023",
+      "to": "Sep 2023"
+    },
+    {
+      "title": "Mueda",
+      "id": "64842144",
+      "country": "MOZ",
+      "year": 2023,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/MOZ/MOZ_combined_areas.topojson",
+      "from": "May 2023",
+      "to": "Sep 2023"
+    }
+  ]
+}
