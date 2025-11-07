@@ -101,11 +101,7 @@ jobs:
           
           echo "args=${ARGS}" >> "$GITHUB_OUTPUT"
 
-          PRESET_YEARS=$(python - <<'PY'
-            from rosea_ipc_toolkit.config import AVAILABLE_YEARS
-            print(", ".join(str(year) for year in AVAILABLE_YEARS))
-          PY
-          )
+          PRESET_YEARS=$(python -c 'from rosea_ipc_toolkit.config import AVAILABLE_YEARS; print(", ".join(str(year) for year in AVAILABLE_YEARS))')
           echo "available_years=${PRESET_YEARS}" >> "$GITHUB_OUTPUT"
 
       - name: Download country datasets
