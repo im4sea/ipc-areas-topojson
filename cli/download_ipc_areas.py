@@ -71,6 +71,11 @@ def parse_cli_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
         action="store_true",
         help="Disable index.json generation (useful for ad-hoc runs)",
     )
+    parser.add_argument(
+        "--extra-global-simplification",
+        action="store_true",
+        help="Write an additional aggressively simplified global_areas_min.topojson",
+    )
     return parser.parse_args(argv)
 
 
@@ -87,6 +92,7 @@ def main(argv: Optional[List[str]] = None) -> int:
         rate_limit_delay=args.rate_limit_delay,
         country_codes=args.countries,
         build_index=not args.skip_index,
+        extra_global_simplification=args.extra_global_simplification,
     )
 
     try:

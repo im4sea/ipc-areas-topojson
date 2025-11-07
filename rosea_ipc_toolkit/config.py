@@ -12,6 +12,8 @@ COUNTRY_FILENAME_SUFFIX = "_areas.topojson"
 COUNTRY_COMBINED_SUFFIX = "_combined_areas.topojson"
 GLOBAL_FILENAME = "global_areas.topojson"
 GLOBAL_OUTPUT_PATH = DATA_DIR / GLOBAL_FILENAME
+GLOBAL_EXTRA_FILENAME = "global_areas_min.topojson"
+GLOBAL_EXTRA_OUTPUT_PATH = DATA_DIR / GLOBAL_EXTRA_FILENAME
 GLOBAL_INFO = {"name": "Global", "iso2": "GL", "iso3": "GLB"}
 
 API_BASE_URL = "https://api.ipcinfo.org/areas"

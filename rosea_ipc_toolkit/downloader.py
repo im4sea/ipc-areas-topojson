@@ -20,6 +20,7 @@ from .config import (
     DATA_DIR,
     DEFAULT_YEARS,
     AVAILABLE_YEARS,
+    GLOBAL_EXTRA_OUTPUT_PATH,
     GLOBAL_INFO,
     GLOBAL_OUTPUT_PATH,
 )
@@ -56,6 +57,7 @@ class DownloadConfig:
     rate_limit_delay: float = 1.0
     country_codes: Optional[List[str]] = None
     build_index: bool = True
+    extra_global_simplification: bool = False
 
 
 class IPCAreaDownloader:
@@ -80,6 +82,7 @@ class IPCAreaDownloader:
             if config.build_index
             else None
         )
+        self.extra_global_simplification = config.extra_global_simplification
         self.country_combined_files: List[Path] = []
         self.country_combined_feature_map: Dict[str, List[Dict[str, Any]]] = {}
         self.iso2_to_iso3: Dict[str, str] = {}
@@ -567,6 +570,8 @@ class IPCAreaDownloader:
         saved_global = save_topology(final_topology, GLOBAL_OUTPUT_PATH)
         
         # Apply aggressive simplification to global dataset
+        extra_global_path: Optional[Path] = None
+
         try:
             # Import here to avoid circular import
             from cli.simplify_ipc_global_areas import simplify_topojson
@@ -577,6 +582,17 @@ class IPCAreaDownloader:
                 simplify_tolerance=0.002,  # Higher tolerance for global file
                 quiet=True,
             )
+
+            if self.extra_global_simplification:
+                extra_global_path = GLOBAL_EXTRA_OUTPUT_PATH
+                simplify_topojson(
+                    saved_global,
+                    output=extra_global_path,
+                    precision=1,
+                    simplify_tolerance=0.01,
+                    quiet=True,
+                )
+                self._strip_global_properties(extra_global_path, keys=("from", "to"))
         except Exception as exc:  # noqa: BLE001
             print(f"    Warning: unable to apply additional simplification to global dataset: {exc}")
 
@@ -590,6 +606,21 @@ class IPCAreaDownloader:
                 path=saved_global,
                 feature_count=len(final_features),
                 variant="global",
+            )
+
+            if self.extra_global_simplification and extra_global_path and extra_global_path.exists():
+                self.index_builder.add_entry(
+                    GLOBAL_INFO,
+                    year=representative_year,
+                    path=extra_global_path,
+                    feature_count=len(final_features),
+                    variant="global_min",
+                )
+
+        if self.extra_global_simplification and extra_global_path and extra_global_path.exists():
+            print(
+                "  Extra simplified global dataset saved to "
+                f"{display_relative(extra_global_path)}"
             )
 
         legacy_path = DATA_DIR / "ipc_global_areas.topojson"
@@ -682,6 +713,35 @@ class IPCAreaDownloader:
                 
         except Exception as exc:  # noqa: BLE001
             print(f"    Warning: unable to round coordinates in {topo_path.name}: {exc}")
+
+    def _strip_global_properties(self, topo_path: Path, keys: Tuple[str, ...]) -> None:
+        try:
+            with topo_path.open("r", encoding="utf-8") as handle:
+                payload = json.load(handle)
+
+            objects = payload.get("objects") if isinstance(payload, dict) else None
+            if not isinstance(objects, dict):
+                return
+
+            changed = False
+            for obj in objects.values():
+                geometries = obj.get("geometries") if isinstance(obj, dict) else None
+                if not isinstance(geometries, list):
+                    continue
+                for geom in geometries:
+                    props = geom.get("properties") if isinstance(geom, dict) else None
+                    if not isinstance(props, dict):
+                        continue
+                    for key in keys:
+                        if key in props:
+                            props.pop(key, None)
+                            changed = True
+
+            if changed:
+                with topo_path.open("w", encoding="utf-8") as handle:
+                    json.dump(payload, handle, separators=(",", ":"))
+        except Exception as exc:  # noqa: BLE001
+            print(f"    Warning: unable to strip properties from {topo_path.name}: {exc}")
 
     @staticmethod
     def _format_analysis_details(meta: Dict[str, Any]) -> str:

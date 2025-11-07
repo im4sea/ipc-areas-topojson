@@ -6,6 +6,7 @@ Automation for downloading and harmonising IPC (Integrated Food Security Phase C
 
 - `data/{ISO3}/{ISO3}_combined_areas.topojson` – all assessments for a country, deduplicated by IPC ID with rounded coordinates.
 - `data/global_areas.topojson` – aggregation of every combined country file with configurable rounding and simplification (defaults to conservative values).
+- `data/global_areas_min.topojson` – optional extra-minified global dataset produced when requested for lightweight previews.
 - `data/index.json` – catalogue of exported datasets, feature counts, timestamps, and optional CDN URLs.
 - `data/**/*_unsimplified.json` – optional reports listing features kept at full detail when simplification fails or has no effect.
 
@@ -24,6 +25,7 @@ Automation for downloading and harmonising IPC (Integrated Food Security Phase C
 - Simplify an existing file: `python -m cli.simplify_ipc_global_areas --help`
 - Programmatic use: `from rosea_ipc_toolkit import DownloadConfig, IPCAreaDownloader`
 - Skip index generation: `python -m cli.download_ipc_areas --skip-index`
+- Generate extra-minified global output: `python -m cli.download_ipc_areas --extra-global-simplification`
 
 ## GitHub Workflow
 
@@ -33,6 +35,7 @@ Automation for downloading and harmonising IPC (Integrated Food Security Phase C
   - `specific_years` – comma-separated override for exact years.
   - `country_codes` – comma-separated ISO2/ISO3 filter.
   - `skip_index` – omit index generation, useful for exploratory runs.
+  - `extra_global_simplification` – emit an additional aggressively simplified global TopoJSON file.
 - Workflow regenerates combined/global files, refreshes `data/index.json` (unless skipped), and opens a pull request.
 
 ## Development Notes

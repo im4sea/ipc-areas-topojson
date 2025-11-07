@@ -29,6 +29,10 @@ on:
         description: 'Simplification tolerance in coordinate units (default: 0.001; set to 0 to disable).'
         required: false
         default: '0.001'
+      extra_global_simplification:
+        description: 'Generate an additional aggressively simplified global TopoJSON output.'
+        required: false
+        default: 'false'
 
 jobs:
   refresh:
@@ -95,6 +99,10 @@ jobs:
 
           if [ "${{ github.event.inputs.skip_index }}" = "true" ]; then
             ARGS+=("--skip-index")
+          fi
+
+          if [ "${{ github.event.inputs.extra_global_simplification }}" = "true" ]; then
+            ARGS+=("--extra-global-simplification")
           fi
 
           ARGS=$(printf '%s ' "${ARGS[@]}" | xargs)
