@@ -19,6 +19,7 @@ from .config import (
     COUNTRY_FILENAME_SUFFIX,
     DATA_DIR,
     DEFAULT_YEARS,
+    AVAILABLE_YEARS,
     GLOBAL_INFO,
     GLOBAL_OUTPUT_PATH,
 )
@@ -36,7 +37,12 @@ from .feature_utils import feature_key, sanitise_geometry
 from .git_utils import resolve_release_tag
 from .index import IndexBuilder
 from .merge import extract_years, flatten_features, merge_features
-from .topology import convert_geojson_to_topology, load_topojson_features, save_topology, display_relative
+from .topology import (
+    convert_geojson_to_topology,
+    load_topojson_features,
+    save_topology,
+    display_relative,
+)
 
 
 @dataclass(frozen=True)
@@ -75,6 +81,7 @@ class IPCAreaDownloader:
             else None
         )
         self.country_combined_files: List[Path] = []
+        self.country_combined_feature_map: Dict[str, List[Dict[str, Any]]] = {}
         self.iso2_to_iso3: Dict[str, str] = {}
         self.country_filter = self._normalise_country_codes(config.country_codes)
         self.current_date = datetime.utcnow().date()
@@ -188,6 +195,8 @@ class IPCAreaDownloader:
         }
         region_label = self.config.ocha_region or "All regions"
         print(f"OCHA region filter: {region_label}")
+        preset_years = ", ".join(str(year) for year in AVAILABLE_YEARS)
+        print(f"Preset year window: {preset_years}")
         print("Assessment years: " + ", ".join(str(year) for year in self.years_to_try))
 
         successful = 0
@@ -337,6 +346,7 @@ class IPCAreaDownloader:
         combined_path = save_topology(combined_topology, modern_combined)
         self._simplify_output(combined_path)
         self.country_combined_files.append(combined_path)
+        self.country_combined_feature_map[iso3] = final_features
 
         feature_count = len(final_features)
         available_years = sorted(year_feature_counts.keys()) or extract_years(aggregate)
@@ -485,31 +495,48 @@ class IPCAreaDownloader:
     def build_global_dataset(self) -> None:
         print("\nBuilding global dataset…")
 
-        combined_files = list(self.country_combined_files)
-        if not combined_files:
-            for country_dir in sorted(DATA_DIR.iterdir()):
-                if not country_dir.is_dir():
-                    continue
-                iso3 = country_dir.name
-                candidate = country_dir / f"{iso3}{COUNTRY_COMBINED_SUFFIX}"
-                if candidate.exists():
-                    combined_files.append(candidate)
-
-        if not combined_files:
-            print("  Warning: no combined country datasets found – global file not updated")
-            return
-
         aggregate: Dict[str, Dict[str, Any]] = {}
-        for path in sorted(combined_files):
-            features = load_topojson_features(path)
-            if not features:
-                continue
+
+        processed_iso3: set[str] = set()
+        for iso3, features in self.country_combined_feature_map.items():
+            processed_iso3.add(iso3)
             merge_features(
                 aggregate,
                 features,
                 priority=0,
                 source_year=None,
-                source_label=path.name,
+                source_label=f"memory:{iso3}",
+            )
+
+        for country_dir in sorted(DATA_DIR.iterdir()):
+            if not country_dir.is_dir():
+                continue
+            iso3 = country_dir.name
+            if iso3 in processed_iso3:
+                continue
+
+            topo_candidate = country_dir / f"{iso3}{COUNTRY_COMBINED_SUFFIX}"
+
+            features: List[Dict[str, Any]] = []
+
+            if topo_candidate.exists():
+                try:
+                    features = load_topojson_features(topo_candidate)
+                except Exception as exc:  # noqa: BLE001
+                    print(
+                        f"  Warning: unable to read existing dataset {display_relative(topo_candidate)}: {exc}"
+                    )
+                    continue
+
+            if not features:
+                continue
+
+            merge_features(
+                aggregate,
+                features,
+                priority=0,
+                source_year=None,
+                source_label=topo_candidate.name,
             )
 
         if not aggregate:

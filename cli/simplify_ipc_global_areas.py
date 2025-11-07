@@ -16,6 +16,8 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
+from rosea_ipc_toolkit.topology import load_topojson_features
+
 try:
     import topojson as tp
 except ImportError as exc:  # pragma: no cover - the script exits immediately
@@ -41,17 +43,7 @@ def ensure_source(path: Path) -> None:
 
 
 def load_global_features(source: Path) -> List[Dict[str, Any]]:
-    with open(source, "r", encoding="utf-8") as handle:
-        topo_payload = json.load(handle)
-
-    topology = tp.Topology(topo_payload, topology=True, prequantize=False)
-    geojson_payload = json.loads(topology.to_geojson())
-
-    features = geojson_payload.get("features") if isinstance(geojson_payload, dict) else None
-    if not isinstance(features, list):
-        return []
-
-    return [feature for feature in features if isinstance(feature, dict)]
+    return load_topojson_features(source)
 
 
 def round_nested(value: Any, digits: int) -> Any:

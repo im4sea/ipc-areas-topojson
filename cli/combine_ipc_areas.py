@@ -2,7 +2,7 @@
 """Combine IPC area TopoJSON datasets into a single, simplified global file.
 
 By default this utility reads the per-country combined outputs produced by the
-downloader (``*_combined_areas.topojson``), converts them to GeoJSON features,
+downloader (``*_combined_areas.topojson``), converts them to feature objects,
 deduplicates by IPC id (falling back to geometry hash), stores an aggregated
 TopoJSON file, and optionally simplifies the result using shared geometry helpers.
 """

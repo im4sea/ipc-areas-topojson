@@ -18,18 +18,81 @@ def convert_geojson_to_topology(geojson: Dict[str, Any]) -> Dict[str, Any]:
     return topology.to_dict()
 
 
+def _wrap_point_coordinates(geometry: Dict[str, Any]) -> None:
+    geom_type = geometry.get("type")
+    if geom_type == "GeometryCollection":
+        members = geometry.get("geometries")
+        if isinstance(members, list):
+            for member in members:
+                if isinstance(member, dict):
+                    _wrap_point_coordinates(member)
+    elif geom_type == "Point":
+        coords = geometry.get("coordinates")
+        if isinstance(coords, list) and coords and isinstance(coords[0], (int, float)):
+            geometry["coordinates"] = [coords]
+
+
+def _wrap_topology_points(payload: Dict[str, Any]) -> Dict[str, Any]:
+    wrapped = json.loads(json.dumps(payload))
+    objects = wrapped.get("objects")
+    if not isinstance(objects, dict):
+        return wrapped
+
+    for obj in objects.values():
+        if not isinstance(obj, dict):
+            continue
+        geometries = obj.get("geometries")
+        if not isinstance(geometries, list):
+            continue
+        for geometry in geometries:
+            if isinstance(geometry, dict):
+                _wrap_point_coordinates(geometry)
+
+    return wrapped
+
+
+def _restore_point_coordinates(geometry: Dict[str, Any]) -> None:
+    geom_type = geometry.get("type")
+    if geom_type == "GeometryCollection":
+        members = geometry.get("geometries")
+        if isinstance(members, list):
+            for member in members:
+                if isinstance(member, dict):
+                    _restore_point_coordinates(member)
+    elif geom_type == "Point":
+        coords = geometry.get("coordinates")
+        if (
+            isinstance(coords, list)
+            and len(coords) == 1
+            and isinstance(coords[0], list)
+            and coords[0]
+            and isinstance(coords[0][0], (int, float))
+        ):
+            geometry["coordinates"] = coords[0]
+
+
 def load_topojson_features(path: Path) -> List[Feature]:
     with path.open("r", encoding="utf-8") as handle:
         topo_payload = json.load(handle)
 
-    topology = tp.Topology(topo_payload, topology=True, prequantize=False)
+    wrapped_payload = _wrap_topology_points(topo_payload)
+    topology = tp.Topology(wrapped_payload, topology=True, prequantize=False)
     geojson_payload = json.loads(topology.to_geojson())
 
     features = geojson_payload.get("features") if isinstance(geojson_payload, dict) else None
     if not isinstance(features, list):
         return []
 
-    return [feature for feature in features if isinstance(feature, dict)]
+    normalised: List[Feature] = []
+    for feature in features:
+        if not isinstance(feature, dict):
+            continue
+        geometry = feature.get("geometry")
+        if isinstance(geometry, dict):
+            _restore_point_coordinates(geometry)
+        normalised.append(feature)
+
+    return normalised
 
 
 def save_topology(topojson_data: Dict[str, Any], path: Path) -> Path:

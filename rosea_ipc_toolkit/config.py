@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from datetime import datetime
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
@@ -14,4 +15,6 @@ GLOBAL_OUTPUT_PATH = DATA_DIR / GLOBAL_FILENAME
 GLOBAL_INFO = {"name": "Global", "iso2": "GL", "iso3": "GLB"}
 
 API_BASE_URL = "https://api.ipcinfo.org/areas"
-DEFAULT_YEARS = list(range(2025, 2019, -1))
+CURRENT_YEAR = datetime.utcnow().year
+AVAILABLE_YEARS = list(range(CURRENT_YEAR, CURRENT_YEAR - 6, -1))
+DEFAULT_YEARS = [CURRENT_YEAR]
