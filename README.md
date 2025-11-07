@@ -39,7 +39,7 @@ Automation for downloading and harmonising IPC (Integrated Food Security Phase C
 
 - Core logic lives under `rosea_ipc_toolkit/`; CLI wrappers sit in `cli/`.
 - `DownloadConfig` controls years, precision, simplification, rate limiting, and country filters.
-- Geometry collections keep their original structure while non-polygon members are stripped so polygonal detail matches the source data.
+- Geometry content now mirrors the source analysis: every geometry type (points, lines, polygons, collections) is retained after sanitisation.
 - Update `DEFAULT_YEARS` in `rosea_ipc_toolkit.config` when IPC adds assessments.
 - CDN URLs default to the next semantic git tag; set `CDN_RELEASE_TAG` to override.
 

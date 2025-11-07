@@ -9,6 +9,8 @@ from typing import Any, Dict, List, Optional
 
 Feature = Dict[str, Any]
 
+Geometry = Dict[str, Any]
+
 
 def normalize_title(title: str | None) -> str:
     if not title:
@@ -39,47 +41,52 @@ def feature_key(feature: Feature) -> str:
     return f"feature::{digest}"
 
 
-def normalise_polygon_geometry(geometry: Any) -> Optional[Dict[str, Any]]:
-    """Return a geometry that only contains polygonal members or ``None``.
-
-    ``Polygon`` and ``MultiPolygon`` geometries are copied verbatim. For
-    ``GeometryCollection`` inputs we recursively strip out non-polygonal
-    members (e.g. points, lines), retaining the collection structure so the
-    source geometry is represented faithfully. Empty results return ``None``.
-    """
+def sanitise_geometry(geometry: Any) -> Optional[Geometry]:
+    """Return a deep-copied GeoJSON geometry or ``None`` if invalid."""
 
     if not isinstance(geometry, dict):
         return None
 
     geom_type = geometry.get("type")
 
-    if geom_type == "Polygon":
-        coordinates = geometry.get("coordinates")
-        if not coordinates:
-            return None
-        return {"type": "Polygon", "coordinates": copy.deepcopy(coordinates)}
-
-    if geom_type == "MultiPolygon":
-        coordinates = geometry.get("coordinates")
-        if not coordinates:
-            return None
-        return {"type": "MultiPolygon", "coordinates": copy.deepcopy(coordinates)}
-
     if geom_type == "GeometryCollection":
-        geometries: List[Any] = []
+        geometries_field = geometry.get("geometries")
+        if not isinstance(geometries_field, list):
+            return None
+        members: List[Geometry] = []
+        for child in geometries_field:
+            cleaned = sanitise_geometry(child)
+            if cleaned is not None:
+                members.append(cleaned)
 
-        for child in geometry.get("geometries") or []:
-            normalised = normalise_polygon_geometry(child)
-            if normalised:
-                geometries.append(normalised)
-
-        if not geometries:
+        if not members:
             return None
 
-        return {"type": "GeometryCollection", "geometries": geometries}
+        result: Geometry = {"type": "GeometryCollection", "geometries": members}
+        if "bbox" in geometry and isinstance(geometry["bbox"], list):
+            result["bbox"] = copy.deepcopy(geometry["bbox"])
+        return result
 
-    return None
+    if geom_type in {"Point", "MultiPoint", "LineString", "MultiLineString", "Polygon", "MultiPolygon"}:
+        coordinates = geometry.get("coordinates")
+        if coordinates is None:
+            return None
+        result = {"type": geom_type, "coordinates": copy.deepcopy(coordinates)}
+        if "bbox" in geometry and isinstance(geometry["bbox"], list):
+            result["bbox"] = copy.deepcopy(geometry["bbox"])
+        return result
 
+    if geom_type in {"CircularString", "CompoundCurve", "CurvePolygon"}:
+        # Non-standard GeoJSON types sometimes returned by upstream sources.
+        coordinates = geometry.get("coordinates")
+        if coordinates is None:
+            return None
+        result = {"type": geom_type, "coordinates": copy.deepcopy(coordinates)}
+        if "bbox" in geometry and isinstance(geometry["bbox"], list):
+            result["bbox"] = copy.deepcopy(geometry["bbox"])
+        return result
 
-def is_supported_geometry(geometry: Any) -> bool:
-    return normalise_polygon_geometry(geometry) is not None
+    try:
+        return json.loads(json.dumps(geometry))
+    except (TypeError, ValueError):
+        return None
