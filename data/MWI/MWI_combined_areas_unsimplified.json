@@ -1,0 +1,51 @@
+{
+  "generated_at": "2025-11-07T15:10:09Z",
+  "source_file": "data/MWI/MWI_combined_areas.topojson",
+  "total_unsimplified": 4,
+  "items": [
+    {
+      "title": "Zomba city",
+      "id": "24542505",
+      "country": "MWI",
+      "year": 2021,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/MWI/MWI_combined_areas.topojson",
+      "from": "Nov 2021",
+      "to": "Dec 2021"
+    },
+    {
+      "title": "Zomba city",
+      "id": "26054616",
+      "country": "MWI",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/MWI/MWI_combined_areas.topojson",
+      "from": "Jun 2022",
+      "to": "Sep 2022"
+    },
+    {
+      "title": "Zomba city",
+      "id": "57196327",
+      "country": "MWI",
+      "year": 2023,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/MWI/MWI_combined_areas.topojson",
+      "from": "Jul 2023",
+      "to": "Sep 2023"
+    },
+    {
+      "title": "Zomba city",
+      "id": "68805072",
+      "country": "MWI",
+      "year": 2024,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/MWI/MWI_combined_areas.topojson",
+      "from": "May 2024",
+      "to": "Sep 2024"
+    }
+  ]
+}
