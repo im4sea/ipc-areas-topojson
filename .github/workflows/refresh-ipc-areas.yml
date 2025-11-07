@@ -68,36 +68,36 @@ jobs:
             TOLERANCE_INPUT="${DEFAULT_TOLERANCE}"
           fi
 
-          ARGS="--precision ${PRECISION_INPUT} --simplify-tolerance ${TOLERANCE_INPUT}"
+          ARGS=("--precision" "${PRECISION_INPUT}" "--simplify-tolerance" "${TOLERANCE_INPUT}")
           
           # Handle year selection
           if [ -n "${{ github.event.inputs.specific_years }}" ]; then
             # Convert comma-separated years to space-separated
             YEARS=$(echo "${{ github.event.inputs.specific_years }}" | tr ',' ' ')
-            ARGS="--years ${YEARS}"
+            ARGS+=("--years" ${YEARS})
           elif [ "${{ github.event_name }}" = "schedule" ]; then
             YEAR=$(date +'%Y')
-            ARGS="--years ${YEAR}"
+            ARGS+=("--years" "${YEAR}")
           elif [ "${{ github.event.inputs.full_refresh }}" = "true" ]; then
             YEAR=$(date +'%Y')
-            ARGS="--years ${YEAR}"
+            ARGS+=("--years" "${YEAR}")
           else
             YEAR=$(date +'%Y')
-            ARGS="--years ${YEAR}"
+            ARGS+=("--years" "${YEAR}")
           fi
           
           # Handle country selection
           if [ -n "${{ github.event.inputs.country_codes }}" ]; then
             # Convert comma-separated countries to space-separated
             COUNTRIES=$(echo "${{ github.event.inputs.country_codes }}" | tr ',' ' ')
-            ARGS="${ARGS} --countries ${COUNTRIES}"
+            ARGS+=("--countries" ${COUNTRIES})
           fi
 
           if [ "${{ github.event.inputs.skip_index }}" = "true" ]; then
-            ARGS="${ARGS} --skip-index"
+            ARGS+=("--skip-index")
           fi
 
-          ARGS=$(echo "${ARGS}" | xargs)
+          ARGS=$(printf '%s ' "${ARGS[@]}" | xargs)
           
           echo "args=${ARGS}" >> "$GITHUB_OUTPUT"
 
