@@ -58,13 +58,15 @@ class DownloadConfig:
     country_codes: Optional[List[str]] = None
     build_index: bool = True
     extra_global_simplification: bool = False
+    extra_global_only: bool = False
 
 
 class IPCAreaDownloader:
     def __init__(self, config: DownloadConfig) -> None:
         self.config = config
+        self.extra_global_only = config.extra_global_only
         self.ipc_key = resolve_ipc_key()
-        if not self.ipc_key:
+        if not self.ipc_key and not self.extra_global_only:
             raise ValueError("IPC_KEY environment variable is required")
 
         self.years_to_try = self._normalise_years(config.years_to_try)
@@ -79,10 +81,10 @@ class IPCAreaDownloader:
         self.release_tag = resolve_release_tag()
         self.index_builder = (
             IndexBuilder(release_tag=self.release_tag, output_dir=DATA_DIR)
-            if config.build_index
+            if config.build_index and not self.extra_global_only
             else None
         )
-        self.extra_global_simplification = config.extra_global_simplification
+        self.extra_global_simplification = config.extra_global_simplification or self.extra_global_only
         self.country_combined_files: List[Path] = []
         self.country_combined_feature_map: Dict[str, List[Dict[str, Any]]] = {}
         self.iso2_to_iso3: Dict[str, str] = {}
@@ -178,6 +180,10 @@ class IPCAreaDownloader:
         
         # Ensure the data directory exists
         DATA_DIR.mkdir(exist_ok=True)
+
+        if self.extra_global_only:
+            self._generate_extra_global_only()
+            return
         
         print("Loading countries data…")
         countries = load_country_rows(ocha_region=self.config.ocha_region)
@@ -634,6 +640,37 @@ class IPCAreaDownloader:
         print(
             f"  Global dataset saved to {display_relative(saved_global)} "
             f"with {len(final_features)} features"
+        )
+
+    def _generate_extra_global_only(self) -> None:
+        print("Extra global-only mode: skipping downloads and regenerating minified global dataset")
+
+        if not GLOBAL_OUTPUT_PATH.exists():
+            raise FileNotFoundError(
+                f"Global dataset not found at {display_relative(GLOBAL_OUTPUT_PATH)}. "
+                "Run without --extra-global-only to rebuild it first."
+            )
+
+        try:
+            from cli.simplify_ipc_global_areas import simplify_topojson
+
+            simplify_topojson(
+                GLOBAL_OUTPUT_PATH,
+                output=GLOBAL_EXTRA_OUTPUT_PATH,
+                precision=1,
+                simplify_tolerance=0.01,
+                quiet=True,
+            )
+
+            self._strip_global_properties(GLOBAL_EXTRA_OUTPUT_PATH, keys=("from", "to"))
+        except Exception as exc:  # noqa: BLE001
+            raise RuntimeError(
+                f"Unable to regenerate extra simplified global dataset: {exc}"
+            ) from exc
+
+        print(
+            "  Extra simplified global dataset saved to "
+            f"{display_relative(GLOBAL_EXTRA_OUTPUT_PATH)}"
         )
 
     # Utility functions --------------------------------------------------

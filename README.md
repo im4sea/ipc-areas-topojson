@@ -26,6 +26,7 @@ Automation for downloading and harmonising IPC (Integrated Food Security Phase C
 - Programmatic use: `from rosea_ipc_toolkit import DownloadConfig, IPCAreaDownloader`
 - Skip index generation: `python -m cli.download_ipc_areas --skip-index`
 - Generate extra-minified global output: `python -m cli.download_ipc_areas --extra-global-simplification`
+- Only regenerate the extra-minified global output: `python -m cli.download_ipc_areas --extra-global-only`
 
 ## GitHub Workflow
 

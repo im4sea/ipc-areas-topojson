@@ -76,11 +76,18 @@ def parse_cli_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
         action="store_true",
         help="Write an additional aggressively simplified global_areas_min.topojson",
     )
+    parser.add_argument(
+        "--extra-global-only",
+        action="store_true",
+        help="Skip downloads and regenerate only the extra simplified global_areas_min.topojson",
+    )
     return parser.parse_args(argv)
 
 
 def main(argv: Optional[List[str]] = None) -> int:
     args = parse_cli_args(argv)
+
+    extra_global_only = args.extra_global_only
 
     config = DownloadConfig(
         years_to_try=args.years,
@@ -91,8 +98,9 @@ def main(argv: Optional[List[str]] = None) -> int:
         retry_delay=args.retry_delay,
         rate_limit_delay=args.rate_limit_delay,
         country_codes=args.countries,
-        build_index=not args.skip_index,
-        extra_global_simplification=args.extra_global_simplification,
+        build_index=False if extra_global_only else not args.skip_index,
+        extra_global_simplification=args.extra_global_simplification or extra_global_only,
+        extra_global_only=extra_global_only,
     )
 
     try:
