@@ -22,13 +22,13 @@ on:
         required: false
         default: 'false'
       precision:
-        description: 'Decimal precision applied during simplification (default: 4).'
+        description: 'Decimal precision applied during simplification (default: 3).'
         required: false
-        default: '4'
+        default: '3'
       simplify_tolerance:
-        description: 'Simplification tolerance in coordinate units (set to 0 to disable).'
+        description: 'Simplification tolerance in coordinate units (default: 0.001; set to 0 to disable).'
         required: false
-        default: '0.0'
+        default: '0.001'
 
 jobs:
   refresh:
@@ -55,8 +55,8 @@ jobs:
         id: args
         shell: bash
         run: |
-          DEFAULT_PRECISION="4"
-          DEFAULT_TOLERANCE="0.0"
+          DEFAULT_PRECISION="3"
+          DEFAULT_TOLERANCE="0.001"
 
           PRECISION_INPUT="${{ github.event.inputs.precision }}"
           if [ -z "${PRECISION_INPUT}" ]; then

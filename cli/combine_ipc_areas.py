@@ -87,13 +87,13 @@ def parse_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
     parser.add_argument(
         "--precision",
         type=int,
-        default=4,
-        help="Decimal precision for coordinate rounding during minification (default: 4)",
+        default=3,
+        help="Decimal precision for coordinate rounding during minification (default: 3)",
     )
     parser.add_argument(
         "--simplify-tolerance",
         type=float,
-        default=0.0,
+        default=0.001,
         help="Simplification tolerance applied after combination; set to 0 to disable",
     )
     parser.add_argument(

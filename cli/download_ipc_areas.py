@@ -27,14 +27,14 @@ def parse_cli_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
     parser.add_argument(
         "--precision",
         type=int,
-        default=4,
-        help="Decimal precision applied during simplification (default: 4)",
+        default=3,
+        help="Decimal precision applied during simplification (default: 3)",
     )
     parser.add_argument(
         "--simplify-tolerance",
         type=float,
-        default=0.0,
-        help="Simplification tolerance applied to combined outputs (default: 0)",
+        default=0.001,
+        help="Simplification tolerance applied to combined outputs (default: 0.001)",
     )
     parser.add_argument(
         "--ocha-region",

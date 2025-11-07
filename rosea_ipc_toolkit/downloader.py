@@ -48,8 +48,8 @@ from .topology import (
 @dataclass(frozen=True)
 class DownloadConfig:
     years_to_try: Optional[List[int]] = None
-    precision: int = 4
-    simplify_tolerance: float = 0.0
+    precision: int = 3
+    simplify_tolerance: float = 0.001
     ocha_region: Optional[str] = "ROSEA"
     request_timeout: int = 30
     retry_delay: float = 0.5

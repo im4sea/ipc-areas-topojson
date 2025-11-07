@@ -19,7 +19,7 @@ Automation for downloading and harmonising IPC (Integrated Food Security Phase C
 ## Common Commands
 
 - Limit scope: `python -m cli.download_ipc_areas --countries SD --years 2025 2024`
-- Custom precision: `python -m cli.download_ipc_areas --precision 4 --simplify-tolerance 0.001`
+- Custom precision: `python -m cli.download_ipc_areas --precision 2 --simplify-tolerance 0.0005`
 - Rebuild global only: `python -m cli.combine_ipc_areas`
 - Simplify an existing file: `python -m cli.simplify_ipc_global_areas --help`
 - Programmatic use: `from rosea_ipc_toolkit import DownloadConfig, IPCAreaDownloader`
@@ -29,7 +29,7 @@ Automation for downloading and harmonising IPC (Integrated Food Security Phase C
 
 - `.github/workflows/refresh-ipc-areas.yml` runs every Monday at 06:00 UTC and supports manual dispatch.
 - Inputs:
-  - `full_refresh` – include all historical years.
+  - `full_refresh` – process the default year set (current year).
   - `specific_years` – comma-separated override for exact years.
   - `country_codes` – comma-separated ISO2/ISO3 filter.
   - `skip_index` – omit index generation, useful for exploratory runs.

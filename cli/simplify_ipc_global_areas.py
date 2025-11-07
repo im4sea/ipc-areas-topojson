@@ -281,8 +281,8 @@ def main(argv: List[str] | None = None) -> int:
     parser.add_argument(
         "--precision",
         type=int,
-        default=4,
-        help="Number of decimal places to retain in coordinates (default: 4)",
+        default=3,
+        help="Number of decimal places to retain in coordinates (default: 3)",
     )
     parser.add_argument(
         "--output",
@@ -299,7 +299,7 @@ def main(argv: List[str] | None = None) -> int:
     parser.add_argument(
         "--simplify-tolerance",
         type=float,
-        default=0.0,
+        default=0.001,
         help="Simplification tolerance in coordinate units; set to 0 to disable",
     )
     args = parser.parse_args(argv)
