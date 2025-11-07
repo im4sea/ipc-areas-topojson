@@ -6,11 +6,11 @@ on:
   workflow_dispatch:
     inputs:
       full_refresh:
-        description: 'Set to true to include historical assessment years (default uses current year only).'
+        description: 'Set to true to process the entire available year window instead of the current year only.'
         required: false
         default: 'false'
       specific_years:
-        description: 'Specific years to process (comma-separated, e.g., "2024,2023"). Overrides full_refresh setting.'
+        description: 'Comma-separated list of exact years to process (e.g., "2024,2023"). Takes priority over full_refresh.'
         required: false
         default: ''
       country_codes:
@@ -79,8 +79,8 @@ jobs:
             YEAR=$(date +'%Y')
             ARGS="--years ${YEAR}"
           elif [ "${{ github.event.inputs.full_refresh }}" = "true" ]; then
-            # No years argument means all historical years
-            ARGS=""
+            YEAR=$(date +'%Y')
+            ARGS="--years ${YEAR}"
           else
             YEAR=$(date +'%Y')
             ARGS="--years ${YEAR}"
@@ -101,6 +101,13 @@ jobs:
           
           echo "args=${ARGS}" >> "$GITHUB_OUTPUT"
 
+          PRESET_YEARS=$(python - <<'PY'
+            from rosea_ipc_toolkit.config import AVAILABLE_YEARS
+            print(", ".join(str(year) for year in AVAILABLE_YEARS))
+          PY
+          )
+          echo "available_years=${PRESET_YEARS}" >> "$GITHUB_OUTPUT"
+
       - name: Download country datasets
         env:
           IPC_KEY: ${{ secrets.IPC_KEY }}
@@ -116,4 +123,5 @@ jobs:
           body: |
             Automated data refresh triggered by `${{ github.event_name }}`.
             - CLI arguments: `${{ steps.args.outputs.args }}`
+            - Available year window: `${{ steps.args.outputs.available_years }}`
             - Downloader stores combined country files and a refreshed `data/global_areas.topojson`.

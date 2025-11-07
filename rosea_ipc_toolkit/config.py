@@ -16,5 +16,5 @@ GLOBAL_INFO = {"name": "Global", "iso2": "GL", "iso3": "GLB"}
 
 API_BASE_URL = "https://api.ipcinfo.org/areas"
 CURRENT_YEAR = datetime.utcnow().year
-AVAILABLE_YEARS = list(range(CURRENT_YEAR, CURRENT_YEAR - 6, -1))
+AVAILABLE_YEARS = [CURRENT_YEAR]
 DEFAULT_YEARS = [CURRENT_YEAR]
