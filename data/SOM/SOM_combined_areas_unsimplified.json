@@ -1,11 +1,66 @@
 {
-  "generated_at": "2025-11-07T15:11:01Z",
+  "generated_at": "2025-11-10T06:40:07Z",
   "source_file": "data/SOM/SOM_combined_areas.topojson",
-  "total_unsimplified": 573,
+  "total_unsimplified": 713,
   "items": [
     {
       "title": "Adan yabaal",
       "id": "18976788",
+      "country": "SOM",
+      "year": 2020,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Jul 2020",
+      "to": "Sep 2020"
+    },
+    {
+      "title": "Baardheere",
+      "id": "18976797",
+      "country": "SOM",
+      "year": 2020,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Jul 2020",
+      "to": "Sep 2020"
+    },
+    {
+      "title": "Badhaadhe",
+      "id": "18976799",
+      "country": "SOM",
+      "year": 2020,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Jul 2020",
+      "to": "Sep 2020"
+    },
+    {
+      "title": "Baki",
+      "id": "18976802",
+      "country": "SOM",
+      "year": 2020,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Jul 2020",
+      "to": "Sep 2020"
+    },
+    {
+      "title": "Banadir",
+      "id": "18976807",
+      "country": "SOM",
+      "year": 2020,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Jul 2020",
+      "to": "Sep 2020"
+    },
+    {
+      "title": "Baraawe",
+      "id": "18976812",
       "country": "SOM",
       "year": 2020,
       "reason": "no_change",
@@ -28,6 +83,50 @@
     {
       "title": "Belet weyne",
       "id": "18976818",
+      "country": "SOM",
+      "year": 2020,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Jul 2020",
+      "to": "Sep 2020"
+    },
+    {
+      "title": "Belet xaawo",
+      "id": "18976820",
+      "country": "SOM",
+      "year": 2020,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Jul 2020",
+      "to": "Sep 2020"
+    },
+    {
+      "title": "Berbera",
+      "id": "18976823",
+      "country": "SOM",
+      "year": 2020,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Jul 2020",
+      "to": "Sep 2020"
+    },
+    {
+      "title": "Borama",
+      "id": "18976825",
+      "country": "SOM",
+      "year": 2020,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Jul 2020",
+      "to": "Sep 2020"
+    },
+    {
+      "title": "Bossaso",
+      "id": "18976827",
       "country": "SOM",
       "year": 2020,
       "reason": "no_change",
@@ -92,8 +191,74 @@
       "to": "Sep 2020"
     },
     {
+      "title": "Caluula",
+      "id": "18976851",
+      "country": "SOM",
+      "year": 2020,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Jul 2020",
+      "to": "Sep 2020"
+    },
+    {
+      "title": "Ceel afweyn",
+      "id": "18976857",
+      "country": "SOM",
+      "year": 2020,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Jul 2020",
+      "to": "Sep 2020"
+    },
+    {
+      "title": "Ceel barde",
+      "id": "18976860",
+      "country": "SOM",
+      "year": 2020,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Jul 2020",
+      "to": "Sep 2020"
+    },
+    {
       "title": "Ceel buur",
       "id": "18976862",
+      "country": "SOM",
+      "year": 2020,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Jul 2020",
+      "to": "Sep 2020"
+    },
+    {
+      "title": "Ceel dheer",
+      "id": "18976864",
+      "country": "SOM",
+      "year": 2020,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Jul 2020",
+      "to": "Sep 2020"
+    },
+    {
+      "title": "Ceel waaq",
+      "id": "18976866",
+      "country": "SOM",
+      "year": 2020,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Jul 2020",
+      "to": "Sep 2020"
+    },
+    {
+      "title": "Ceerigaabo",
+      "id": "18976868",
       "country": "SOM",
       "year": 2020,
       "reason": "no_change",
@@ -180,8 +345,63 @@
       "to": "Sep 2020"
     },
     {
+      "title": "Hargeysa",
+      "id": "18976889",
+      "country": "SOM",
+      "year": 2020,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Jul 2020",
+      "to": "Sep 2020"
+    },
+    {
+      "title": "Hobyo",
+      "id": "18976891",
+      "country": "SOM",
+      "year": 2020,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Jul 2020",
+      "to": "Sep 2020"
+    },
+    {
+      "title": "Iskushuban",
+      "id": "18976893",
+      "country": "SOM",
+      "year": 2020,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Jul 2020",
+      "to": "Sep 2020"
+    },
+    {
       "title": "Jalalaqsi",
       "id": "18976895",
+      "country": "SOM",
+      "year": 2020,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Jul 2020",
+      "to": "Sep 2020"
+    },
+    {
+      "title": "Jariiban",
+      "id": "18976899",
+      "country": "SOM",
+      "year": 2020,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Jul 2020",
+      "to": "Sep 2020"
+    },
+    {
+      "title": "Jilib",
+      "id": "18976901",
       "country": "SOM",
       "year": 2020,
       "reason": "no_change",
@@ -202,8 +422,63 @@
       "to": "Sep 2020"
     },
     {
+      "title": "Laasqoray",
+      "id": "18976911",
+      "country": "SOM",
+      "year": 2020,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Jul 2020",
+      "to": "Sep 2020"
+    },
+    {
+      "title": "Lughaye",
+      "id": "18976913",
+      "country": "SOM",
+      "year": 2020,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Jul 2020",
+      "to": "Sep 2020"
+    },
+    {
       "title": "Luuq",
       "id": "18976915",
+      "country": "SOM",
+      "year": 2020,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Jul 2020",
+      "to": "Sep 2020"
+    },
+    {
+      "title": "Marka",
+      "id": "18976917",
+      "country": "SOM",
+      "year": 2020,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Jul 2020",
+      "to": "Sep 2020"
+    },
+    {
+      "title": "Owdweyne",
+      "id": "18976919",
+      "country": "SOM",
+      "year": 2020,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Jul 2020",
+      "to": "Sep 2020"
+    },
+    {
+      "title": "Qandala",
+      "id": "18976921",
       "country": "SOM",
       "year": 2020,
       "reason": "no_change",
@@ -290,6 +565,17 @@
       "to": "Sep 2020"
     },
     {
+      "title": "Waajid",
+      "id": "18976941",
+      "country": "SOM",
+      "year": 2020,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Jul 2020",
+      "to": "Sep 2020"
+    },
+    {
       "title": "Wanla weyn",
       "id": "18976943",
       "country": "SOM",
@@ -334,6 +620,83 @@
       "to": "Sep 2020"
     },
     {
+      "title": "Zeylac",
+      "id": "18976951",
+      "country": "SOM",
+      "year": 2020,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Jul 2020",
+      "to": "Sep 2020"
+    },
+    {
+      "title": "Woqooyi galbeed",
+      "id": "24607469",
+      "country": "SOM",
+      "year": 2021,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Jul 2021",
+      "to": "Sep 2021"
+    },
+    {
+      "title": "Shabelle dhexe",
+      "id": "24607477",
+      "country": "SOM",
+      "year": 2021,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Jul 2021",
+      "to": "Sep 2021"
+    },
+    {
+      "title": "Sanaag",
+      "id": "24607479",
+      "country": "SOM",
+      "year": 2021,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Jul 2021",
+      "to": "Sep 2021"
+    },
+    {
+      "title": "Mudug",
+      "id": "24607483",
+      "country": "SOM",
+      "year": 2021,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Jul 2021",
+      "to": "Sep 2021"
+    },
+    {
+      "title": "Gedo",
+      "id": "24607491",
+      "country": "SOM",
+      "year": 2021,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Jul 2021",
+      "to": "Sep 2021"
+    },
+    {
+      "title": "Galgaduud",
+      "id": "24607493",
+      "country": "SOM",
+      "year": 2021,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Jul 2021",
+      "to": "Sep 2021"
+    },
+    {
       "title": "Banadir",
       "id": "24607499",
       "country": "SOM",
@@ -345,8 +708,30 @@
       "to": "Sep 2021"
     },
     {
+      "title": "Hargeysa (2)",
+      "id": "26783372",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
       "title": "Taleex",
       "id": "26783381",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Belet Weyne (1)",
+      "id": "26783384",
       "country": "SOM",
       "year": 2022,
       "reason": "no_change",
@@ -422,8 +807,52 @@
       "to": "Dec 2022"
     },
     {
+      "title": "Belet Weyne",
+      "id": "26783423",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Kismaayo",
+      "id": "26783428",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
       "title": "Xudur",
       "id": "26783433",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Balcad",
+      "id": "26783439",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Caluula",
+      "id": "26783441",
       "country": "SOM",
       "year": 2022,
       "reason": "no_change",
@@ -444,8 +873,85 @@
       "to": "Dec 2022"
     },
     {
+      "title": "Kismaayo (3)",
+      "id": "26783450",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Baraawe (1)",
+      "id": "26783461",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Berbera (1)",
+      "id": "26783463",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
       "title": "Garoowe (1)",
       "id": "26783465",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Bossaso",
+      "id": "26783469",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Jowhar",
+      "id": "26783471",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Garbahaarey",
+      "id": "26783477",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Sablaale (2)",
+      "id": "26783479",
       "country": "SOM",
       "year": 2022,
       "reason": "no_change",
@@ -543,8 +1049,63 @@
       "to": "Dec 2022"
     },
     {
+      "title": "Bulo Burto (1)",
+      "id": "26783516",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Luuq",
+      "id": "26783522",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Hargeysa (1)",
+      "id": "26783526",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Afmadow (1)",
+      "id": "26783528",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
       "title": "Jamaame (1)",
       "id": "26783530",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Hobyo",
+      "id": "26783542",
       "country": "SOM",
       "year": 2022,
       "reason": "no_change",
@@ -587,6 +1148,28 @@
       "to": "Dec 2022"
     },
     {
+      "title": "Adan Yabaal (1)",
+      "id": "26783552",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Belet Weyne (3)",
+      "id": "26783554",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
       "title": "Galdogob",
       "id": "26783556",
       "country": "SOM",
@@ -620,8 +1203,30 @@
       "to": "Dec 2022"
     },
     {
+      "title": "Ceel Barde (1)",
+      "id": "26783564",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
       "title": "Cadaado",
       "id": "26783572",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Balcad (1)",
+      "id": "26783578",
       "country": "SOM",
       "year": 2022,
       "reason": "no_change",
@@ -642,8 +1247,63 @@
       "to": "Dec 2022"
     },
     {
+      "title": "Bu'aale",
+      "id": "26783588",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Qandala",
+      "id": "26783590",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Afmadow",
+      "id": "26783602",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
       "title": "Ceel Afweyn (3)",
       "id": "26783606",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Ceel Waaq",
+      "id": "26783608",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Jariiban (1)",
+      "id": "26783612",
       "country": "SOM",
       "year": 2022,
       "reason": "no_change",
@@ -686,8 +1346,74 @@
       "to": "Dec 2022"
     },
     {
+      "title": "Doolow",
+      "id": "26783622",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Bu'aale (2)",
+      "id": "26783626",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
       "title": "Eyl",
       "id": "26783628",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Gebiley (1)",
+      "id": "26783632",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Bossaso (1)",
+      "id": "26783636",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Gebiley",
+      "id": "26783644",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Belet Weyne (2)",
+      "id": "26783646",
       "country": "SOM",
       "year": 2022,
       "reason": "no_change",
@@ -719,6 +1445,17 @@
       "to": "Dec 2022"
     },
     {
+      "title": "Burco",
+      "id": "26783654",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
       "title": "Dhuusamarreeb (3)",
       "id": "26783658",
       "country": "SOM",
@@ -741,8 +1478,52 @@
       "to": "Dec 2022"
     },
     {
+      "title": "Baardheere (1)",
+      "id": "26783672",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Jilib (2)",
+      "id": "26783674",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Borama (1)",
+      "id": "26783678",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
       "title": "Diinsoor",
       "id": "26783682",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Ceel Afweyn (1)",
+      "id": "26783690",
       "country": "SOM",
       "year": 2022,
       "reason": "no_change",
@@ -785,6 +1566,28 @@
       "to": "Dec 2022"
     },
     {
+      "title": "Baki (2)",
+      "id": "26783706",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Gaalkacyo (1)",
+      "id": "26783712",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
       "title": "Iskushuban (2)",
       "id": "26783720",
       "country": "SOM",
@@ -796,8 +1599,30 @@
       "to": "Dec 2022"
     },
     {
+      "title": "Baardheere (2)",
+      "id": "26783722",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
       "title": "Ceel Dheer",
       "id": "26783728",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Belet Xaawo",
+      "id": "26783730",
       "country": "SOM",
       "year": 2022,
       "reason": "no_change",
@@ -829,8 +1654,30 @@
       "to": "Dec 2022"
     },
     {
+      "title": "Zeylac (1)",
+      "id": "26783740",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
       "title": "Wanla Weyn (1)",
       "id": "26783744",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Hargeysa",
+      "id": "26783746",
       "country": "SOM",
       "year": 2022,
       "reason": "no_change",
@@ -851,8 +1698,41 @@
       "to": "Dec 2022"
     },
     {
+      "title": "Badhaadhe (1)",
+      "id": "26783754",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
       "title": "Jamaame (2)",
       "id": "26783758",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Lughaye",
+      "id": "26783760",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Ceerigaabo",
+      "id": "26783762",
       "country": "SOM",
       "year": 2022,
       "reason": "no_change",
@@ -873,6 +1753,17 @@
       "to": "Dec 2022"
     },
     {
+      "title": "Tayeeglow (1)",
+      "id": "26783776",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
       "title": "Baydhaba",
       "id": "26783792",
       "country": "SOM",
@@ -884,8 +1775,74 @@
       "to": "Dec 2022"
     },
     {
+      "title": "Laasqoray (1)",
+      "id": "26783794",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Badhaadhe (2)",
+      "id": "26783796",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
       "title": "Owdweyne (1)",
       "id": "26783806",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Luuq (4)",
+      "id": "26783810",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Marka",
+      "id": "26783816",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Afgooye",
+      "id": "26783826",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Badhaadhe",
+      "id": "26783828",
       "country": "SOM",
       "year": 2022,
       "reason": "no_change",
@@ -939,6 +1896,28 @@
       "to": "Dec 2022"
     },
     {
+      "title": "Hobyo (1)",
+      "id": "26783840",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Waajid",
+      "id": "26783844",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
       "title": "Saakow",
       "id": "26783848",
       "country": "SOM",
@@ -952,6 +1931,61 @@
     {
       "title": "Lughaye (1)",
       "id": "26783850",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Cadale (2)",
+      "id": "26783854",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Owdweyne (3)",
+      "id": "26783856",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Jilib (3)",
+      "id": "26783858",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Bulo Burto (3)",
+      "id": "26783862",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Burco (2)",
+      "id": "26783866",
       "country": "SOM",
       "year": 2022,
       "reason": "no_change",
@@ -1005,8 +2039,41 @@
       "to": "Dec 2022"
     },
     {
+      "title": "Ceel Dheer (1)",
+      "id": "26783884",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
       "title": "Saakow (3)",
       "id": "26783886",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Afgooye (1)",
+      "id": "26783888",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Jalalaqsi (4)",
+      "id": "26783894",
       "country": "SOM",
       "year": 2022,
       "reason": "no_change",
@@ -1049,8 +2116,30 @@
       "to": "Dec 2022"
     },
     {
+      "title": "Iskushuban (1)",
+      "id": "26783910",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
       "title": "Qoryooley (2)",
       "id": "26783912",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Jowhar (2)",
+      "id": "26783914",
       "country": "SOM",
       "year": 2022,
       "reason": "no_change",
@@ -1082,6 +2171,17 @@
       "to": "Dec 2022"
     },
     {
+      "title": "Eyl (2)",
+      "id": "26783924",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
       "title": "Xudur (1)",
       "id": "26783928",
       "country": "SOM",
@@ -1095,6 +2195,17 @@
     {
       "title": "Marka (1)",
       "id": "26783930",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Jariiban",
+      "id": "26783932",
       "country": "SOM",
       "year": 2022,
       "reason": "no_change",
@@ -1126,6 +2237,28 @@
       "to": "Dec 2022"
     },
     {
+      "title": "Zeylac",
+      "id": "26783946",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Sablaale (5)",
+      "id": "26783948",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
       "title": "Caynabo (1)",
       "id": "26783952",
       "country": "SOM",
@@ -1139,6 +2272,28 @@
     {
       "title": "Berbera",
       "id": "26783954",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Doolow (2)",
+      "id": "26783956",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Adan Yabaal",
+      "id": "26783958",
       "country": "SOM",
       "year": 2022,
       "reason": "no_change",
@@ -1170,6 +2325,17 @@
       "to": "Dec 2022"
     },
     {
+      "title": "Kismaayo (2)",
+      "id": "26783974",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
       "title": "Owdweyne",
       "id": "26783978",
       "country": "SOM",
@@ -1183,6 +2349,17 @@
     {
       "title": "Sheikh (1)",
       "id": "26783982",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Gaalkacyo",
+      "id": "26783984",
       "country": "SOM",
       "year": 2022,
       "reason": "no_change",
@@ -1214,8 +2391,30 @@
       "to": "Dec 2022"
     },
     {
+      "title": "Jowhar (1)",
+      "id": "26783998",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
       "title": "Borama",
       "id": "26784000",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Afmadow (3)",
+      "id": "26784004",
       "country": "SOM",
       "year": 2022,
       "reason": "no_change",
@@ -1247,8 +2446,63 @@
       "to": "Dec 2022"
     },
     {
+      "title": "Bandarbeyla",
+      "id": "26784014",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Afgooye (2)",
+      "id": "26784028",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
       "title": "Xarardheere (1)",
       "id": "26784034",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Baardheere (3)",
+      "id": "26784036",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Owdweyne (2)",
+      "id": "26784038",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Bandarbeyla (1)",
+      "id": "26784044",
       "country": "SOM",
       "year": 2022,
       "reason": "no_change",
@@ -1271,6 +2525,17 @@
     {
       "title": "Cabudwaaq",
       "id": "26784058",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Tayeeglow (2)",
+      "id": "26784060",
       "country": "SOM",
       "year": 2022,
       "reason": "no_change",
@@ -1335,8 +2600,85 @@
       "to": "Dec 2022"
     },
     {
+      "title": "Buur Hakaba (2)",
+      "id": "26784080",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Balcad (3)",
+      "id": "26784082",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Ceel Waaq (1)",
+      "id": "26784084",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
       "title": "Borama (2)",
       "id": "26784086",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Baki",
+      "id": "26784088",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Buuhoodle (1)",
+      "id": "26784090",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Bulo Burto (2)",
+      "id": "26784094",
+      "country": "SOM",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
+      "title": "Luuq (1)",
+      "id": "26784096",
       "country": "SOM",
       "year": 2022,
       "reason": "no_change",
@@ -2105,6 +3447,17 @@
       "to": "Sep 2023"
     },
     {
+      "title": "Kismaayo (3)",
+      "id": "59091205",
+      "country": "SOM",
+      "year": 2023,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Aug 2023",
+      "to": "Sep 2023"
+    },
+    {
       "title": "Rab dhuure",
       "id": "59091215",
       "country": "SOM",
@@ -2237,6 +3590,17 @@
       "to": "Sep 2023"
     },
     {
+      "title": "Bandarbeyla (1)",
+      "id": "59091260",
+      "country": "SOM",
+      "year": 2023,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Aug 2023",
+      "to": "Sep 2023"
+    },
+    {
       "title": "Tayeeglow (1)",
       "id": "59091262",
       "country": "SOM",
@@ -2338,6 +3702,17 @@
     {
       "title": "Laas caanood (1)",
       "id": "59091290",
+      "country": "SOM",
+      "year": 2023,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Aug 2023",
+      "to": "Sep 2023"
+    },
+    {
+      "title": "Balcad (2)",
+      "id": "59091300",
       "country": "SOM",
       "year": 2023,
       "reason": "no_change",
@@ -2622,6 +3997,17 @@
       "to": "Sep 2023"
     },
     {
+      "title": "Jalalaqsi",
+      "id": "59091388",
+      "country": "SOM",
+      "year": 2023,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Aug 2023",
+      "to": "Sep 2023"
+    },
+    {
       "title": "Adan yabaal (1)",
       "id": "59091394",
       "country": "SOM",
@@ -2688,8 +4074,30 @@
       "to": "Sep 2023"
     },
     {
+      "title": "Jilib",
+      "id": "59091420",
+      "country": "SOM",
+      "year": 2023,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Aug 2023",
+      "to": "Sep 2023"
+    },
+    {
       "title": "Zeylac",
       "id": "59091422",
+      "country": "SOM",
+      "year": 2023,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Aug 2023",
+      "to": "Sep 2023"
+    },
+    {
+      "title": "Kismaayo (2)",
+      "id": "59091428",
       "country": "SOM",
       "year": 2023,
       "reason": "no_change",
@@ -2974,8 +4382,30 @@
       "to": "Sep 2023"
     },
     {
+      "title": "Ceel dheer",
+      "id": "59091542",
+      "country": "SOM",
+      "year": 2023,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Aug 2023",
+      "to": "Sep 2023"
+    },
+    {
       "title": "Sablaale (5)",
       "id": "59091548",
+      "country": "SOM",
+      "year": 2023,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Aug 2023",
+      "to": "Sep 2023"
+    },
+    {
+      "title": "Bulo burto (2)",
+      "id": "59091552",
       "country": "SOM",
       "year": 2023,
       "reason": "no_change",
@@ -3163,6 +4593,17 @@
     {
       "title": "Baardheere (1)",
       "id": "59091612",
+      "country": "SOM",
+      "year": 2023,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Aug 2023",
+      "to": "Sep 2023"
+    },
+    {
+      "title": "Balcad (1)",
+      "id": "59091616",
       "country": "SOM",
       "year": 2023,
       "reason": "no_change",
@@ -3405,6 +4846,17 @@
     {
       "title": "Tayeeglow (2)",
       "id": "69455834",
+      "country": "SOM",
+      "year": 2024,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Jul 2024",
+      "to": "Sep 2024"
+    },
+    {
+      "title": "Bandarbeyla (1)",
+      "id": "69455836",
       "country": "SOM",
       "year": 2024,
       "reason": "no_change",
@@ -3713,6 +5165,17 @@
     {
       "title": "Jariiban (1)",
       "id": "69455953",
+      "country": "SOM",
+      "year": 2024,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Jul 2024",
+      "to": "Sep 2024"
+    },
+    {
+      "title": "Jalalaqsi",
+      "id": "69455955",
       "country": "SOM",
       "year": 2024,
       "reason": "no_change",
@@ -4041,6 +5504,17 @@
       "to": "Sep 2024"
     },
     {
+      "title": "Ceel dheer",
+      "id": "69456085",
+      "country": "SOM",
+      "year": 2024,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Jul 2024",
+      "to": "Sep 2024"
+    },
+    {
       "title": "Caluula",
       "id": "69456089",
       "country": "SOM",
@@ -4065,6 +5539,17 @@
     {
       "title": "Dhuusamarreeb (3)",
       "id": "69456093",
+      "country": "SOM",
+      "year": 2024,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Jul 2024",
+      "to": "Sep 2024"
+    },
+    {
+      "title": "Jilib",
+      "id": "69456099",
       "country": "SOM",
       "year": 2024,
       "reason": "no_change",
@@ -4153,6 +5638,17 @@
     {
       "title": "Xudur (1)",
       "id": "69456127",
+      "country": "SOM",
+      "year": 2024,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Jul 2024",
+      "to": "Sep 2024"
+    },
+    {
+      "title": "Balcad (2)",
+      "id": "69456129",
       "country": "SOM",
       "year": 2024,
       "reason": "no_change",
@@ -4340,6 +5836,17 @@
     {
       "title": "Luuq",
       "id": "69456187",
+      "country": "SOM",
+      "year": 2024,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Jul 2024",
+      "to": "Sep 2024"
+    },
+    {
+      "title": "Kismaayo (2)",
+      "id": "69456191",
       "country": "SOM",
       "year": 2024,
       "reason": "no_change",
@@ -4646,6 +6153,17 @@
       "to": "Sep 2024"
     },
     {
+      "title": "Balcad (1)",
+      "id": "69456295",
+      "country": "SOM",
+      "year": 2024,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Jul 2024",
+      "to": "Sep 2024"
+    },
+    {
       "title": "Dhuusamarreeb (2)",
       "id": "69456297",
       "country": "SOM",
@@ -4758,6 +6276,17 @@
     {
       "title": "Cadale (2)",
       "id": "69456330",
+      "country": "SOM",
+      "year": 2024,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Jul 2024",
+      "to": "Sep 2024"
+    },
+    {
+      "title": "Kismaayo (3)",
+      "id": "69456332",
       "country": "SOM",
       "year": 2024,
       "reason": "no_change",
@@ -4945,6 +6474,17 @@
     {
       "title": "Cadaado",
       "id": "69456392",
+      "country": "SOM",
+      "year": 2024,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/SOM/SOM_combined_areas.topojson",
+      "from": "Jul 2024",
+      "to": "Sep 2024"
+    },
+    {
+      "title": "Bulo burto (2)",
+      "id": "69456396",
       "country": "SOM",
       "year": 2024,
       "reason": "no_change",
