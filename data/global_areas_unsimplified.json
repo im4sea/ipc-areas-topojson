@@ -1,8 +1,30 @@
 {
-  "generated_at": "2025-11-07T15:14:41Z",
+  "generated_at": "2025-11-10T06:43:46Z",
   "source_file": "data/global_areas.topojson",
-  "total_unsimplified": 1114,
+  "total_unsimplified": 1124,
   "items": [
+    {
+      "title": "Korahe",
+      "id": "19423687",
+      "country": "ETH",
+      "year": null,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/global_areas.topojson",
+      "from": "Oct 2020",
+      "to": "Dec 2020"
+    },
+    {
+      "title": "Korahe",
+      "id": "25133876",
+      "country": "ETH",
+      "year": null,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/global_areas.topojson",
+      "from": "May 2021",
+      "to": "Jun 2021"
+    },
     {
       "title": "Vohipeno",
       "id": "82895258",
@@ -171,17 +193,6 @@
     {
       "title": "Distrito Municpal KaMaxaquene",
       "id": "48056986",
-      "country": "MOZ",
-      "year": null,
-      "reason": "no_change",
-      "detail": "Simplified geometry matches original",
-      "source_dataset": "data/global_areas.topojson",
-      "from": "Oct 2022",
-      "to": "Mar 2023"
-    },
-    {
-      "title": "Ilha de Mocambique",
-      "id": "48057011",
       "country": "MOZ",
       "year": null,
       "reason": "no_change",
@@ -499,17 +510,6 @@
       "to": "Sep 2025"
     },
     {
-      "title": "Jebel awlia",
-      "id": "18151866",
-      "country": "SDN",
-      "year": null,
-      "reason": "no_change",
-      "detail": "Simplified geometry matches original",
-      "source_dataset": "data/global_areas.topojson",
-      "from": "Jun 2020",
-      "to": "Sep 2020"
-    },
-    {
       "title": "Al koma",
       "id": "18151955",
       "country": "SDN",
@@ -523,6 +523,17 @@
     {
       "title": "Al golid",
       "id": "18151961",
+      "country": "SDN",
+      "year": null,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/global_areas.topojson",
+      "from": "Jun 2020",
+      "to": "Sep 2020"
+    },
+    {
+      "title": "Mershing",
+      "id": "18151963",
       "country": "SDN",
       "year": null,
       "reason": "no_change",
@@ -587,6 +598,17 @@
       "to": "Sep 2020"
     },
     {
+      "title": "Babanusa",
+      "id": "18152099",
+      "country": "SDN",
+      "year": null,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/global_areas.topojson",
+      "from": "Jun 2020",
+      "to": "Sep 2020"
+    },
+    {
       "title": "Sinkat",
       "id": "18152137",
       "country": "SDN",
@@ -631,6 +653,17 @@
       "to": "May 2021"
     },
     {
+      "title": "Mershing",
+      "id": "24004171",
+      "country": "SDN",
+      "year": null,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/global_areas.topojson",
+      "from": "Apr 2021",
+      "to": "May 2021"
+    },
+    {
       "title": "Ad dabbah",
       "id": "24004173",
       "country": "SDN",
@@ -655,17 +688,6 @@
     {
       "title": "Madeinat kassala",
       "id": "24004265",
-      "country": "SDN",
-      "year": null,
-      "reason": "no_change",
-      "detail": "Simplified geometry matches original",
-      "source_dataset": "data/global_areas.topojson",
-      "from": "Apr 2021",
-      "to": "May 2021"
-    },
-    {
-      "title": "Jebel awlia",
-      "id": "24004287",
       "country": "SDN",
       "year": null,
       "reason": "no_change",
@@ -741,6 +763,17 @@
       "to": "May 2021"
     },
     {
+      "title": "Babanusa",
+      "id": "24004467",
+      "country": "SDN",
+      "year": null,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/global_areas.topojson",
+      "from": "Apr 2021",
+      "to": "May 2021"
+    },
+    {
       "title": "Madeinat kassala",
       "id": "25857847",
       "country": "SDN",
@@ -796,8 +829,8 @@
       "to": "May 2022"
     },
     {
-      "title": "Foro baranga",
-      "id": "25858060",
+      "title": "Babanusa",
+      "id": "25858040",
       "country": "SDN",
       "year": null,
       "reason": "no_change",
@@ -807,8 +840,8 @@
       "to": "May 2022"
     },
     {
-      "title": "Jebel awlia",
-      "id": "25858070",
+      "title": "Foro baranga",
+      "id": "25858060",
       "country": "SDN",
       "year": null,
       "reason": "no_change",
@@ -831,6 +864,17 @@
     {
       "title": "Khartoum",
       "id": "25858112",
+      "country": "SDN",
+      "year": null,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/global_areas.topojson",
+      "from": "Apr 2022",
+      "to": "May 2022"
+    },
+    {
+      "title": "Mershing",
+      "id": "25858122",
       "country": "SDN",
       "year": null,
       "reason": "no_change",
@@ -895,6 +939,17 @@
       "to": "Jun 2023"
     },
     {
+      "title": "Mershing",
+      "id": "58836588",
+      "country": "SDN",
+      "year": null,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/global_areas.topojson",
+      "from": "Jun 2023",
+      "to": "Jun 2023"
+    },
+    {
       "title": "Nyala shimal",
       "id": "58836592",
       "country": "SDN",
@@ -939,8 +994,8 @@
       "to": "Jun 2023"
     },
     {
-      "title": "Jebel awlia",
-      "id": "58836788",
+      "title": "Babanusa",
+      "id": "58836723",
       "country": "SDN",
       "year": null,
       "reason": "no_change",
@@ -1007,6 +1062,17 @@
     {
       "title": "Sawakin",
       "id": "68887816",
+      "country": "SDN",
+      "year": null,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/global_areas.topojson",
+      "from": "Apr 2024",
+      "to": "May 2024"
+    },
+    {
+      "title": "Babanusa",
+      "id": "68887848",
       "country": "SDN",
       "year": null,
       "reason": "no_change",
@@ -1095,17 +1161,6 @@
     {
       "title": "Belet weyne",
       "id": "18976818",
-      "country": "SOM",
-      "year": null,
-      "reason": "no_change",
-      "detail": "Simplified geometry matches original",
-      "source_dataset": "data/global_areas.topojson",
-      "from": "Jul 2020",
-      "to": "Sep 2020"
-    },
-    {
-      "title": "Bossaso",
-      "id": "18976827",
       "country": "SOM",
       "year": null,
       "reason": "no_change",
@@ -1434,6 +1489,17 @@
       "to": "Dec 2022"
     },
     {
+      "title": "Bulo Burto (1)",
+      "id": "26783516",
+      "country": "SOM",
+      "year": null,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/global_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Dec 2022"
+    },
+    {
       "title": "Jamaame (1)",
       "id": "26783530",
       "country": "SOM",
@@ -1711,17 +1777,6 @@
     {
       "title": "Cabudwaaq",
       "id": "26784058",
-      "country": "SOM",
-      "year": null,
-      "reason": "no_change",
-      "detail": "Simplified geometry matches original",
-      "source_dataset": "data/global_areas.topojson",
-      "from": "Oct 2022",
-      "to": "Dec 2022"
-    },
-    {
-      "title": "Tayeeglow (2)",
-      "id": "26784060",
       "country": "SOM",
       "year": null,
       "reason": "no_change",
@@ -2589,6 +2644,17 @@
       "to": "Sep 2023"
     },
     {
+      "title": "Balcad (2)",
+      "id": "59091300",
+      "country": "SOM",
+      "year": null,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/global_areas.topojson",
+      "from": "Aug 2023",
+      "to": "Sep 2023"
+    },
+    {
       "title": "Lughaye (1)",
       "id": "59091306",
       "country": "SOM",
@@ -2910,6 +2976,17 @@
     {
       "title": "Zeylac",
       "id": "59091422",
+      "country": "SOM",
+      "year": null,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/global_areas.topojson",
+      "from": "Aug 2023",
+      "to": "Sep 2023"
+    },
+    {
+      "title": "Kismaayo (2)",
+      "id": "59091428",
       "country": "SOM",
       "year": null,
       "reason": "no_change",
@@ -4206,6 +4283,17 @@
       "to": "Sep 2024"
     },
     {
+      "title": "Balcad (2)",
+      "id": "69456129",
+      "country": "SOM",
+      "year": null,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/global_areas.topojson",
+      "from": "Jul 2024",
+      "to": "Sep 2024"
+    },
+    {
       "title": "Laasqoray",
       "id": "69456133",
       "country": "SOM",
@@ -4373,6 +4461,17 @@
     {
       "title": "Luuq",
       "id": "69456187",
+      "country": "SOM",
+      "year": null,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/global_areas.topojson",
+      "from": "Jul 2024",
+      "to": "Sep 2024"
+    },
+    {
+      "title": "Kismaayo (2)",
+      "id": "69456191",
       "country": "SOM",
       "year": null,
       "reason": "no_change",
@@ -8628,6 +8727,17 @@
       "to": "Sep 2025"
     },
     {
+      "title": "Kaskazini pemba",
+      "id": "26775742",
+      "country": "TZA",
+      "year": null,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/global_areas.topojson",
+      "from": "Oct 2022",
+      "to": "Feb 2023"
+    },
+    {
       "title": "Central division",
       "id": "18724716",
       "country": "UGA",
@@ -8738,17 +8848,6 @@
       "to": "Dec 2020"
     },
     {
-      "title": "Tembisa",
-      "id": "22128071",
-      "country": "ZAF",
-      "year": null,
-      "reason": "no_change",
-      "detail": "Simplified geometry matches original",
-      "source_dataset": "data/global_areas.topojson",
-      "from": "Sep 2020",
-      "to": "Dec 2020"
-    },
-    {
       "title": "New Brighton",
       "id": "22128082",
       "country": "ZAF",
@@ -8813,17 +8912,6 @@
       "source_dataset": "data/global_areas.topojson",
       "from": "Sep 2020",
       "to": "Dec 2020"
-    },
-    {
-      "title": "Lunga",
-      "id": "19345715",
-      "country": "ZMB",
-      "year": null,
-      "reason": "no_change",
-      "detail": "Simplified geometry matches original",
-      "source_dataset": "data/global_areas.topojson",
-      "from": "Jul 2020",
-      "to": "Sep 2020"
     },
     {
       "title": "Chavuma",
@@ -9310,6 +9398,17 @@
       "to": "Sep 2021"
     },
     {
+      "title": "Lunga",
+      "id": "24152830",
+      "country": "ZMB",
+      "year": null,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/global_areas.topojson",
+      "from": "Jul 2021",
+      "to": "Sep 2021"
+    },
+    {
       "title": "Rufunsa",
       "id": "24152832",
       "country": "ZMB",
@@ -9741,6 +9840,17 @@
     {
       "title": "Chingola",
       "id": "26097078",
+      "country": "ZMB",
+      "year": null,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/global_areas.topojson",
+      "from": "Jun 2022",
+      "to": "Sep 2022"
+    },
+    {
+      "title": "Lunga",
+      "id": "26097080",
       "country": "ZMB",
       "year": null,
       "reason": "no_change",
@@ -10333,17 +10443,6 @@
       "to": "Sep 2022"
     },
     {
-      "title": "Luwingu",
-      "id": "26097206",
-      "country": "ZMB",
-      "year": null,
-      "reason": "no_change",
-      "detail": "Simplified geometry matches original",
-      "source_dataset": "data/global_areas.topojson",
-      "from": "Jun 2022",
-      "to": "Sep 2022"
-    },
-    {
       "title": "Mufulira",
       "id": "26097208",
       "country": "ZMB",
@@ -10918,6 +11017,17 @@
     {
       "title": "Mafinga",
       "id": "63026159",
+      "country": "ZMB",
+      "year": null,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/global_areas.topojson",
+      "from": "Aug 2023",
+      "to": "Sep 2023"
+    },
+    {
+      "title": "Lunga",
+      "id": "63026161",
       "country": "ZMB",
       "year": null,
       "reason": "no_change",
@@ -11950,6 +12060,17 @@
       "to": "Sep 2024"
     },
     {
+      "title": "Lunga",
+      "id": "69465179",
+      "country": "ZMB",
+      "year": null,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/global_areas.topojson",
+      "from": "Jul 2024",
+      "to": "Sep 2024"
+    },
+    {
       "title": "Lumezi",
       "id": "69465199",
       "country": "ZMB",
@@ -12245,17 +12366,6 @@
       "source_dataset": "data/global_areas.topojson",
       "from": "Apr 2025",
       "to": "Sep 2025"
-    },
-    {
-      "title": "Mount Darwin",
-      "id": "19420131",
-      "country": "ZWE",
-      "year": null,
-      "reason": "no_change",
-      "detail": "Simplified geometry matches original",
-      "source_dataset": "data/global_areas.topojson",
-      "from": "Oct 2020",
-      "to": "Dec 2020"
     }
   ]
 }

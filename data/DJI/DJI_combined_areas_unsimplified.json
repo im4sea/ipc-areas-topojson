@@ -1,8 +1,19 @@
 {
-  "generated_at": "2025-11-07T15:09:16Z",
+  "generated_at": "2025-11-10T06:38:22Z",
   "source_file": "data/DJI/DJI_combined_areas.topojson",
-  "total_unsimplified": 5,
+  "total_unsimplified": 21,
   "items": [
+    {
+      "title": "Dikhil Rural",
+      "id": "21818915",
+      "country": "DJI",
+      "year": 2020,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/DJI/DJI_combined_areas.topojson",
+      "from": "Oct 2020",
+      "to": "Dec 2020"
+    },
     {
       "title": "Ali Sabieh Rural",
       "id": "21818917",
@@ -13,6 +24,50 @@
       "source_dataset": "data/DJI/DJI_combined_areas.topojson",
       "from": "Oct 2020",
       "to": "Dec 2020"
+    },
+    {
+      "title": "Arta Rural",
+      "id": "21818920",
+      "country": "DJI",
+      "year": 2020,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/DJI/DJI_combined_areas.topojson",
+      "from": "Oct 2020",
+      "to": "Dec 2020"
+    },
+    {
+      "title": "Tadjourah Rural",
+      "id": "21818925",
+      "country": "DJI",
+      "year": 2020,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/DJI/DJI_combined_areas.topojson",
+      "from": "Oct 2020",
+      "to": "Dec 2020"
+    },
+    {
+      "title": "Obock Rural",
+      "id": "21818928",
+      "country": "DJI",
+      "year": 2020,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/DJI/DJI_combined_areas.topojson",
+      "from": "Oct 2020",
+      "to": "Dec 2020"
+    },
+    {
+      "title": "Tadjourah Rural",
+      "id": "24959519",
+      "country": "DJI",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/DJI/DJI_combined_areas.topojson",
+      "from": "Mar 2022",
+      "to": "Jun 2022"
     },
     {
       "title": "Ali Sabieh Rural",
@@ -26,6 +81,50 @@
       "to": "Jun 2022"
     },
     {
+      "title": "Dikhil Rural",
+      "id": "24959530",
+      "country": "DJI",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/DJI/DJI_combined_areas.topojson",
+      "from": "Mar 2022",
+      "to": "Jun 2022"
+    },
+    {
+      "title": "Arta Rural",
+      "id": "24959533",
+      "country": "DJI",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/DJI/DJI_combined_areas.topojson",
+      "from": "Mar 2022",
+      "to": "Jun 2022"
+    },
+    {
+      "title": "Obock Rural",
+      "id": "24959540",
+      "country": "DJI",
+      "year": 2022,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/DJI/DJI_combined_areas.topojson",
+      "from": "Mar 2022",
+      "to": "Jun 2022"
+    },
+    {
+      "title": "Dikhil Rural",
+      "id": "56992582",
+      "country": "DJI",
+      "year": 2023,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/DJI/DJI_combined_areas.topojson",
+      "from": "Mar 2023",
+      "to": "Jun 2023"
+    },
+    {
       "title": "Ali Sabieh Rural",
       "id": "56992584",
       "country": "DJI",
@@ -37,8 +136,85 @@
       "to": "Jun 2023"
     },
     {
+      "title": "Arta Rural",
+      "id": "56992587",
+      "country": "DJI",
+      "year": 2023,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/DJI/DJI_combined_areas.topojson",
+      "from": "Mar 2023",
+      "to": "Jun 2023"
+    },
+    {
+      "title": "Obock Rural",
+      "id": "56992590",
+      "country": "DJI",
+      "year": 2023,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/DJI/DJI_combined_areas.topojson",
+      "from": "Mar 2023",
+      "to": "Jun 2023"
+    },
+    {
+      "title": "Tadjourah Rural",
+      "id": "56992608",
+      "country": "DJI",
+      "year": 2023,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/DJI/DJI_combined_areas.topojson",
+      "from": "Mar 2023",
+      "to": "Jun 2023"
+    },
+    {
       "title": "Ali Sabieh Rural",
       "id": "68810220",
+      "country": "DJI",
+      "year": 2024,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/DJI/DJI_combined_areas.topojson",
+      "from": "Apr 2024",
+      "to": "Jun 2024"
+    },
+    {
+      "title": "Dikhil Rural",
+      "id": "68810223",
+      "country": "DJI",
+      "year": 2024,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/DJI/DJI_combined_areas.topojson",
+      "from": "Apr 2024",
+      "to": "Jun 2024"
+    },
+    {
+      "title": "Arta Rural",
+      "id": "68810228",
+      "country": "DJI",
+      "year": 2024,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/DJI/DJI_combined_areas.topojson",
+      "from": "Apr 2024",
+      "to": "Jun 2024"
+    },
+    {
+      "title": "Obock Rural",
+      "id": "68810231",
+      "country": "DJI",
+      "year": 2024,
+      "reason": "no_change",
+      "detail": "Simplified geometry matches original",
+      "source_dataset": "data/DJI/DJI_combined_areas.topojson",
+      "from": "Apr 2024",
+      "to": "Jun 2024"
+    },
+    {
+      "title": "Tadjourah Rural",
+      "id": "68810234",
       "country": "DJI",
       "year": 2024,
       "reason": "no_change",
