@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-25T10:23:51Z",
+  "generated_at": "2026-06-01T11:49:51Z",
   "cdn_release_tag": "v1.7",
   "total_files": 24,
   "items": [
@@ -9,7 +9,7 @@
       "file_name": "AGO_combined_areas.topojson",
       "feature_count": 17,
       "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.7/data/AGO/AGO_combined_areas.topojson",
-      "updated_at": "2026-05-25T10:18:15Z",
+      "updated_at": "2026-06-01T11:44:16Z",
       "variant": "combined"
     },
     {
@@ -18,7 +18,7 @@
       "file_name": "BDI_combined_areas.topojson",
       "feature_count": 48,
       "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.7/data/BDI/BDI_combined_areas.topojson",
-      "updated_at": "2026-05-25T10:18:21Z",
+      "updated_at": "2026-06-01T11:44:21Z",
       "variant": "combined"
     },
     {
@@ -27,7 +27,7 @@
       "file_name": "DJI_combined_areas.topojson",
       "feature_count": 75,
       "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.7/data/DJI/DJI_combined_areas.topojson",
-      "updated_at": "2026-05-25T10:18:23Z",
+      "updated_at": "2026-06-01T11:44:23Z",
       "variant": "combined"
     },
     {
@@ -36,7 +36,7 @@
       "file_name": "ETH_combined_areas.topojson",
       "feature_count": 136,
       "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.7/data/ETH/ETH_combined_areas.topojson",
-      "updated_at": "2026-05-25T10:18:33Z",
+      "updated_at": "2026-06-01T11:44:33Z",
       "variant": "combined"
     },
     {
@@ -45,7 +45,7 @@
       "file_name": "KEN_combined_areas.topojson",
       "feature_count": 183,
       "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.7/data/KEN/KEN_combined_areas.topojson",
-      "updated_at": "2026-05-25T10:18:54Z",
+      "updated_at": "2026-06-01T11:44:54Z",
       "variant": "combined"
     },
     {
@@ -54,7 +54,7 @@
       "file_name": "LSO_combined_areas.topojson",
       "feature_count": 60,
       "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.7/data/LSO/LSO_combined_areas.topojson",
-      "updated_at": "2026-05-25T10:18:59Z",
+      "updated_at": "2026-06-01T11:44:58Z",
       "variant": "combined"
     },
     {
@@ -63,7 +63,7 @@
       "file_name": "MDG_combined_areas.topojson",
       "feature_count": 141,
       "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.7/data/MDG/MDG_combined_areas.topojson",
-      "updated_at": "2026-05-25T10:20:05Z",
+      "updated_at": "2026-06-01T11:46:04Z",
       "variant": "combined"
     },
     {
@@ -72,7 +72,7 @@
       "file_name": "MOZ_combined_areas.topojson",
       "feature_count": 463,
       "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.7/data/MOZ/MOZ_combined_areas.topojson",
-      "updated_at": "2026-05-25T10:20:43Z",
+      "updated_at": "2026-06-01T11:46:41Z",
       "variant": "combined"
     },
     {
@@ -81,16 +81,16 @@
       "file_name": "MWI_combined_areas.topojson",
       "feature_count": 192,
       "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.7/data/MWI/MWI_combined_areas.topojson",
-      "updated_at": "2026-05-25T10:20:13Z",
+      "updated_at": "2026-06-01T11:46:11Z",
       "variant": "combined"
     },
     {
       "country": "Sudan (the)",
       "relative_path": "data/SDN/SDN_combined_areas.topojson",
       "file_name": "SDN_combined_areas.topojson",
-      "feature_count": 1304,
+      "feature_count": 1306,
       "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.7/data/SDN/SDN_combined_areas.topojson",
-      "updated_at": "2026-05-25T10:23:02Z",
+      "updated_at": "2026-06-01T11:49:01Z",
       "variant": "combined"
     },
     {
@@ -99,7 +99,7 @@
       "file_name": "SOM_combined_areas.topojson",
       "feature_count": 1826,
       "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.7/data/SOM/SOM_combined_areas.topojson",
-      "updated_at": "2026-05-25T10:20:53Z",
+      "updated_at": "2026-06-01T11:46:52Z",
       "variant": "combined"
     },
     {
@@ -108,7 +108,7 @@
       "file_name": "SSD_combined_areas.topojson",
       "feature_count": 479,
       "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.7/data/SSD/SSD_combined_areas.topojson",
-      "updated_at": "2026-05-25T10:21:06Z",
+      "updated_at": "2026-06-01T11:47:06Z",
       "variant": "combined"
     },
     {
@@ -117,7 +117,7 @@
       "file_name": "SWZ_combined_areas.topojson",
       "feature_count": 63,
       "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.7/data/SWZ/SWZ_combined_areas.topojson",
-      "updated_at": "2026-05-25T10:18:28Z",
+      "updated_at": "2026-06-01T11:44:28Z",
       "variant": "combined"
     },
     {
@@ -126,7 +126,7 @@
       "file_name": "TZA_combined_areas.topojson",
       "feature_count": 113,
       "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.7/data/TZA/TZA_combined_areas.topojson",
-      "updated_at": "2026-05-25T10:23:23Z",
+      "updated_at": "2026-06-01T11:49:22Z",
       "variant": "combined"
     },
     {
@@ -135,7 +135,7 @@
       "file_name": "UGA_combined_areas.topojson",
       "feature_count": 171,
       "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.7/data/UGA/UGA_combined_areas.topojson",
-      "updated_at": "2026-05-25T10:21:25Z",
+      "updated_at": "2026-06-01T11:47:25Z",
       "variant": "combined"
     },
     {
@@ -144,7 +144,7 @@
       "file_name": "ZAF_combined_areas.topojson",
       "feature_count": 34,
       "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.7/data/ZAF/ZAF_combined_areas.topojson",
-      "updated_at": "2026-05-25T10:20:56Z",
+      "updated_at": "2026-06-01T11:46:55Z",
       "variant": "combined"
     },
     {
@@ -153,7 +153,7 @@
       "file_name": "ZMB_combined_areas.topojson",
       "feature_count": 483,
       "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.7/data/ZMB/ZMB_combined_areas.topojson",
-      "updated_at": "2026-05-25T10:22:36Z",
+      "updated_at": "2026-06-01T11:48:35Z",
       "variant": "combined"
     },
     {
@@ -162,16 +162,16 @@
       "file_name": "ZWE_combined_areas.topojson",
       "feature_count": 60,
       "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.7/data/ZWE/ZWE_combined_areas.topojson",
-      "updated_at": "2026-05-25T10:22:39Z",
+      "updated_at": "2026-06-01T11:48:38Z",
       "variant": "combined"
     },
     {
       "country": "Combined",
       "relative_path": "data/combined_areas.topojson",
       "file_name": "combined_areas.topojson",
-      "feature_count": 5848,
+      "feature_count": 5850,
       "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.7/data/combined_areas.topojson",
-      "updated_at": "2026-05-25T10:23:50Z",
+      "updated_at": "2026-06-01T11:49:51Z",
       "variant": "combined"
     },
     {
@@ -193,9 +193,9 @@
       "year": 2026,
       "relative_path": "data/SDN/SDN_2026_areas.topojson",
       "file_name": "SDN_2026_areas.topojson",
-      "feature_count": 187,
+      "feature_count": 189,
       "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.7/data/SDN/SDN_2026_areas.topojson",
-      "updated_at": "May 2026",
+      "updated_at": "Sep 2026",
       "variant": "year"
     },
     {
@@ -231,7 +231,7 @@
       "file_name": "TZA_2026_areas.topojson",
       "feature_count": 29,
       "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.7/data/TZA/TZA_2026_areas.topojson",
-      "updated_at": "May 2026",
+      "updated_at": "Jan 2027",
       "variant": "year"
     }
   ]
