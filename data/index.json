@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-20T09:26:12Z",
+  "generated_at": "2026-08-24T07:11:39Z",
   "cdn_release_tag": "v1.7",
-  "total_files": 26,
+  "total_files": 31,
   "items": [
     {
       "country": "Angola",
@@ -9,25 +9,25 @@
       "file_name": "AGO_combined_areas.topojson",
       "feature_count": 17,
       "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.7/data/AGO/AGO_combined_areas.topojson",
-      "updated_at": "2026-07-20T09:22:29Z",
+      "updated_at": "2026-08-24T07:05:32Z",
       "variant": "combined"
     },
     {
       "country": "Burundi",
       "relative_path": "data/BDI/BDI_combined_areas.topojson",
       "file_name": "BDI_combined_areas.topojson",
-      "feature_count": 48,
+      "feature_count": 56,
       "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.7/data/BDI/BDI_combined_areas.topojson",
-      "updated_at": "2026-07-20T09:22:33Z",
+      "updated_at": "2026-08-24T07:05:38Z",
       "variant": "combined"
     },
     {
       "country": "Djibouti",
       "relative_path": "data/DJI/DJI_combined_areas.topojson",
       "file_name": "DJI_combined_areas.topojson",
-      "feature_count": 75,
+      "feature_count": 90,
       "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.7/data/DJI/DJI_combined_areas.topojson",
-      "updated_at": "2026-07-20T09:22:35Z",
+      "updated_at": "2026-08-24T07:05:40Z",
       "variant": "combined"
     },
     {
@@ -36,7 +36,7 @@
       "file_name": "ETH_combined_areas.topojson",
       "feature_count": 136,
       "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.7/data/ETH/ETH_combined_areas.topojson",
-      "updated_at": "2026-07-20T09:22:43Z",
+      "updated_at": "2026-08-24T07:05:51Z",
       "variant": "combined"
     },
     {
@@ -45,16 +45,16 @@
       "file_name": "KEN_combined_areas.topojson",
       "feature_count": 183,
       "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.7/data/KEN/KEN_combined_areas.topojson",
-      "updated_at": "2026-07-20T09:22:56Z",
+      "updated_at": "2026-08-24T07:06:11Z",
       "variant": "combined"
     },
     {
       "country": "Lesotho",
       "relative_path": "data/LSO/LSO_combined_areas.topojson",
       "file_name": "LSO_combined_areas.topojson",
-      "feature_count": 60,
+      "feature_count": 70,
       "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.7/data/LSO/LSO_combined_areas.topojson",
-      "updated_at": "2026-07-20T09:22:59Z",
+      "updated_at": "2026-08-24T07:06:17Z",
       "variant": "combined"
     },
     {
@@ -63,7 +63,7 @@
       "file_name": "MDG_combined_areas.topojson",
       "feature_count": 261,
       "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.7/data/MDG/MDG_combined_areas.topojson",
-      "updated_at": "2026-07-20T09:23:46Z",
+      "updated_at": "2026-08-24T07:07:51Z",
       "variant": "combined"
     },
     {
@@ -72,16 +72,16 @@
       "file_name": "MOZ_combined_areas.topojson",
       "feature_count": 463,
       "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.7/data/MOZ/MOZ_combined_areas.topojson",
-      "updated_at": "2026-07-20T09:24:10Z",
+      "updated_at": "2026-08-24T07:08:29Z",
       "variant": "combined"
     },
     {
       "country": "Malawi",
       "relative_path": "data/MWI/MWI_combined_areas.topojson",
       "file_name": "MWI_combined_areas.topojson",
-      "feature_count": 192,
+      "feature_count": 224,
       "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.7/data/MWI/MWI_combined_areas.topojson",
-      "updated_at": "2026-07-20T09:23:51Z",
+      "updated_at": "2026-08-24T07:07:59Z",
       "variant": "combined"
     },
     {
@@ -90,7 +90,7 @@
       "file_name": "SDN_combined_areas.topojson",
       "feature_count": 1306,
       "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.7/data/SDN/SDN_combined_areas.topojson",
-      "updated_at": "2026-07-20T09:25:39Z",
+      "updated_at": "2026-08-24T07:10:48Z",
       "variant": "combined"
     },
     {
@@ -99,7 +99,7 @@
       "file_name": "SOM_combined_areas.topojson",
       "feature_count": 1826,
       "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.7/data/SOM/SOM_combined_areas.topojson",
-      "updated_at": "2026-07-20T09:24:17Z",
+      "updated_at": "2026-08-24T07:08:37Z",
       "variant": "combined"
     },
     {
@@ -108,16 +108,16 @@
       "file_name": "SSD_combined_areas.topojson",
       "feature_count": 479,
       "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.7/data/SSD/SSD_combined_areas.topojson",
-      "updated_at": "2026-07-20T09:24:28Z",
+      "updated_at": "2026-08-24T07:08:52Z",
       "variant": "combined"
     },
     {
       "country": "Eswatini",
       "relative_path": "data/SWZ/SWZ_combined_areas.topojson",
       "file_name": "SWZ_combined_areas.topojson",
-      "feature_count": 63,
+      "feature_count": 74,
       "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.7/data/SWZ/SWZ_combined_areas.topojson",
-      "updated_at": "2026-07-20T09:22:39Z",
+      "updated_at": "2026-08-24T07:05:46Z",
       "variant": "combined"
     },
     {
@@ -126,7 +126,7 @@
       "file_name": "TZA_combined_areas.topojson",
       "feature_count": 113,
       "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.7/data/TZA/TZA_combined_areas.topojson",
-      "updated_at": "2026-07-20T09:25:52Z",
+      "updated_at": "2026-08-24T07:11:09Z",
       "variant": "combined"
     },
     {
@@ -135,7 +135,7 @@
       "file_name": "UGA_combined_areas.topojson",
       "feature_count": 180,
       "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.7/data/UGA/UGA_combined_areas.topojson",
-      "updated_at": "2026-07-20T09:24:40Z",
+      "updated_at": "2026-08-24T07:09:12Z",
       "variant": "combined"
     },
     {
@@ -144,7 +144,7 @@
       "file_name": "ZAF_combined_areas.topojson",
       "feature_count": 34,
       "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.7/data/ZAF/ZAF_combined_areas.topojson",
-      "updated_at": "2026-07-20T09:24:20Z",
+      "updated_at": "2026-08-24T07:08:41Z",
       "variant": "combined"
     },
     {
@@ -153,7 +153,7 @@
       "file_name": "ZMB_combined_areas.topojson",
       "feature_count": 483,
       "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.7/data/ZMB/ZMB_combined_areas.topojson",
-      "updated_at": "2026-07-20T09:25:21Z",
+      "updated_at": "2026-08-24T07:10:22Z",
       "variant": "combined"
     },
     {
@@ -162,17 +162,41 @@
       "file_name": "ZWE_combined_areas.topojson",
       "feature_count": 60,
       "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.7/data/ZWE/ZWE_combined_areas.topojson",
-      "updated_at": "2026-07-20T09:25:24Z",
+      "updated_at": "2026-08-24T07:10:25Z",
       "variant": "combined"
     },
     {
       "country": "Combined",
       "relative_path": "data/combined_areas.topojson",
       "file_name": "combined_areas.topojson",
-      "feature_count": 5979,
+      "feature_count": 6055,
       "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.7/data/combined_areas.topojson",
-      "updated_at": "2026-07-20T09:26:12Z",
+      "updated_at": "2026-08-24T07:11:39Z",
       "variant": "combined"
+    },
+    {
+      "country": "Burundi",
+      "iso2": "BI",
+      "iso3": "BDI",
+      "year": 2026,
+      "relative_path": "data/BDI/BDI_2026_areas.topojson",
+      "file_name": "BDI_2026_areas.topojson",
+      "feature_count": 8,
+      "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.7/data/BDI/BDI_2026_areas.topojson",
+      "updated_at": "Sep 2026",
+      "variant": "year"
+    },
+    {
+      "country": "Djibouti",
+      "iso2": "DJ",
+      "iso3": "DJI",
+      "year": 2026,
+      "relative_path": "data/DJI/DJI_2026_areas.topojson",
+      "file_name": "DJI_2026_areas.topojson",
+      "feature_count": 15,
+      "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.7/data/DJI/DJI_2026_areas.topojson",
+      "updated_at": "Dec 2026",
+      "variant": "year"
     },
     {
       "country": "Kenya",
@@ -187,6 +211,18 @@
       "variant": "year"
     },
     {
+      "country": "Lesotho",
+      "iso2": "LS",
+      "iso3": "LSO",
+      "year": 2026,
+      "relative_path": "data/LSO/LSO_2026_areas.topojson",
+      "file_name": "LSO_2026_areas.topojson",
+      "feature_count": 10,
+      "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.7/data/LSO/LSO_2026_areas.topojson",
+      "updated_at": "Sep 2026",
+      "variant": "year"
+    },
+    {
       "country": "Madagascar",
       "iso2": "MG",
       "iso3": "MDG",
@@ -195,6 +231,18 @@
       "file_name": "MDG_2026_areas.topojson",
       "feature_count": 120,
       "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.7/data/MDG/MDG_2026_areas.topojson",
+      "updated_at": "Sep 2026",
+      "variant": "year"
+    },
+    {
+      "country": "Malawi",
+      "iso2": "MW",
+      "iso3": "MWI",
+      "year": 2026,
+      "relative_path": "data/MWI/MWI_2026_areas.topojson",
+      "file_name": "MWI_2026_areas.topojson",
+      "feature_count": 32,
+      "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.7/data/MWI/MWI_2026_areas.topojson",
       "updated_at": "Sep 2026",
       "variant": "year"
     },
@@ -235,6 +283,18 @@
       "variant": "year"
     },
     {
+      "country": "Eswatini",
+      "iso2": "SZ",
+      "iso3": "SWZ",
+      "year": 2026,
+      "relative_path": "data/SWZ/SWZ_2026_areas.topojson",
+      "file_name": "SWZ_2026_areas.topojson",
+      "feature_count": 11,
+      "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.7/data/SWZ/SWZ_2026_areas.topojson",
+      "updated_at": "Sep 2026",
+      "variant": "year"
+    },
+    {
       "country": "Tanzania, the United Republic of",
       "iso2": "TZ",
       "iso3": "TZA",
@@ -255,7 +315,7 @@
       "file_name": "UGA_2026_areas.topojson",
       "feature_count": 9,
       "cdn_url": "https://cdn.jsdelivr.net/gh/im4sea/ipc-areas@v1.7/data/UGA/UGA_2026_areas.topojson",
-      "updated_at": "Jul 2026",
+      "updated_at": "Feb 2027",
       "variant": "year"
     }
   ]
